@@ -1,38 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import { OrbitControls, useTexture } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import React, { useRef } from 'react';
+import { useTexture } from "@react-three/drei";
 import * as THREE from 'three';
+import { useFrame } from '@react-three/fiber';
+import { Group } from 'three/examples/jsm/libs/tween.module.js';
 
 function Scene() {
-    // State to manage texture loading
-    const [texture, setTexture] = useState(null);
-    const [error, setError] = useState(false);
-
-    // Load texture safely
-    useEffect(() => {
-        try {
-            const tex = useTexture('/SourceImg/Frame-1.png');
-            setTexture(tex);
-        } catch (err) {
-            console.error('Texture failed to load:', err);
-            setError(true);
-        }
-    }, []);
-
-    if (error) {
-        return <p>Texture failed to load. Please check your image path.</p>;
-    }
-
+    // Load the texture using the correct root path
+    const tex = useTexture('./Frame-1.png');
+    let Scene = useRef(null)
+    useFrame((state, delta) =>{
+        Scene.current.rotation.y += delta;
+    });
     return (
-        <Canvas>
-            <OrbitControls />
-            <mesh>
-                <cylinderGeometry args={[2, 2, 3, 500, 500, true]} />
-                {texture && (
-                    <meshBasicMaterial map={texture} side={THREE.DoubleSide} />
-                )}
-            </mesh>
-        </Canvas>
+        <group rotation={[0,1.4, 0.4]}>
+            <mesh ref={Scene}>
+            <cylinderGeometry args={[1, 1, 1, 500, 500, true]} />
+            <meshBasicMaterial map={tex} transparent side={THREE.DoubleSide} />
+        </mesh>
+        </group>
     );
 }
 

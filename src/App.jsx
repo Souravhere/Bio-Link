@@ -1,23 +1,18 @@
-import { OrbitControls } from "@react-three/drei";
+import React from 'react';
 import { Canvas } from "@react-three/fiber";
-import { MeshBasicMaterial } from "three";
-import * as THREE from 'three';
+import { OrbitControls } from "@react-three/drei";
 import Scene from "./Components/Scene";
 
 function App() {
-  
   return (
-    <>
-      <div className="w-full h-screen bg-black">
-        <Canvas>
-          <OrbitControls/>
-          <ambientLight/>
-          <Scene/>
-        </Canvas>
-      </div>
-    </>
+    <div className="w-full h-screen bg-black">
+      <Canvas camera={{fov:30}}>
+        <ambientLight />
+        <OrbitControls />
+        <Scene />
+      </Canvas>
+    </div>
   );
 }
 
 export default App;
- 
