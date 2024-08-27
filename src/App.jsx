@@ -1,6 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { MeshBasicMaterial } from "three";
+import * as THREE from 'three';
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
           <OrbitControls/>
           <ambientLight/>
           <mesh>
-            <cylinderGeometry args={[3 ,3, 10, 10, 10, false]}/>
-            <meshBasicMaterial color="white " />
+            <cylinderGeometry args={[1 ,1, 1, 30, 30, true]}/>
+            <meshBasicMaterial side={THREE.DoubleSide} />
           </mesh>
         </Canvas>
       </div>
