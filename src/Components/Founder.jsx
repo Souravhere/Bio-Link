@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from 'react';
+import { FaInstagram } from "react-icons/fa";
 function Founder() {
     const founderdata = [
         {
@@ -23,7 +23,7 @@ function Founder() {
     ]
   return (
     <>
-    <div className='dark:bg-black bg-white w-full flex items-center justify-evenly p-2'>
+    <div className='dark:bg-black bg-white w-full sm:flex block items-center justify-evenly p-2'>
         {/* this is founder section  */}
         <div>          
         {founderdata.map((founderdata) =>(
@@ -40,7 +40,30 @@ function Founder() {
         </div>
         {/* this is socials section */}
         <div>
-
+            <div className='flex items-center justify-center gap-2'>
+                <a href="">
+                <div className='p-2 dark:bg-gray-800 bg-gray-200 rounded-lg'>
+                <FaInstagram size={25} className='dark:text-white text-black' />
+                </div>
+                </a>
+                <a href="">
+                <div className='p-2 dark:bg-gray-800 bg-gray-200 rounded-lg'>
+                <FaInstagram size={25} className='dark:text-white text-black' />
+                </div>
+                </a>
+            </div>
+            <div className='flex items-center justify-center gap-2 mt-2'>
+                <a href="">
+                <div className='p-2 dark:bg-gray-800 bg-gray-200 rounded-lg'>
+                <FaInstagram size={25} className='dark:text-white text-black' />
+                </div>
+                </a>
+                <a href="">
+                <div className='p-2 dark:bg-gray-800 bg-gray-200 rounded-lg'>
+                <FaInstagram size={25} className='dark:text-white text-black' />
+                </div>
+                </a>
+            </div>
         </div>
     </div>
     </>
