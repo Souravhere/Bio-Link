@@ -17,14 +17,14 @@ function App() {
         <EffectComposer>
           <Bloom
             mipmapBlur
-            intensity={1}
+            intensity={0}
             luminanceThreshold={2} 
             luminanceSmoothing={2}
           />
         </EffectComposer>
       </Canvas>
       </div>
-      <div className='sm:w-1/2 w-full'>
+      <div className='sm:w-1/2 w-full relative'>
         <h1 className='text-black dark:text-white text-3xl font-semibold text-center my-3'>Projects</h1>
         <div className='h-[400px] overflow-y-scroll w-full'>
           <Pojectcard />
