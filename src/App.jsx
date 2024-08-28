@@ -11,7 +11,7 @@ import Founder from './Components/Founder';
 function App() {
   return (
   <>
-  <Founder/>
+  {/* <Founder/> */}
     <div className="w-full bg-white dark:bg-black md:h-96 lg:h-[600px] sm:flex block items-center justify-evenly">
       <div className='sm:w-1/2 w-full md:h-96 lg:h-[600px] h-[600px] sm:-ml-[0%] ml-0'>
       <Canvas flat camera={{fov: 40, position: [0, 0, 5] }} resize={{ scroll: true, debounce: { scroll: 50, resize: 0 } }}>
@@ -36,7 +36,7 @@ function App() {
       </div>
     </div>
     {/* <Textanimation/> */}
-    <div className='w-full h-screen bg-black'></div>
+    {/* <div className='w-full h-screen bg-black'></div> */}
   </>
   );
 }
