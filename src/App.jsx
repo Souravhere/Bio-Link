@@ -8,10 +8,12 @@ import Pojectcard from './Components/Pojectcard';
 import Textanimation from './Components/Textanimation';
 import Founder from './Components/Founder';
 import Navbars from './Components/Navbar';
+import NavComp from './Components/NavComp';
 
 function App() {
   return (
   <>
+  <NavComp/>
   {/* <Navbars/> */}
   {/* <Founder/> */}
     <div className="w-full bg-[#e5e5e1] text-[#000000] dark:bg-black md:h-96 lg:h-[600px] sm:flex block items-center justify-evenly">
