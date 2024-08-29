@@ -15,7 +15,7 @@ import Herosection from './Components/Herosection';
 function App() {
   return (
   <>
-  {/* <NavComp/> */}
+  <NavComp/>
   <Herosection/>
   {/* <Navbars/> */}
   {/* <Founder/> */}
