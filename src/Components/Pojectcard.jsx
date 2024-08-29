@@ -39,7 +39,7 @@ function Pojectcard() {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="mx-auto my-4 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          className="mx-auto my-4 max-w-sm p-6 bg-[#ffffff] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <a href={project.link}>
             <div className="py-1 px-2 bg-purple-500/80 inline-block rounded-full font-semibold">
