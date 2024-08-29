@@ -21,7 +21,7 @@ function App() {
   <Herosection/>
   {/* <Navbars/> */}
   {/* <Founder/> */}
-    <div className="w-full bg-[#e5e5e1] text-[#000000] dark:bg-black md:h-96 lg:h-[600px] sm:flex block items-center justify-evenly">
+    <div className="w-full bg-[#e5e5e1] text-[#000000] dark:bg-black md:h-96 lg:h-[600px] sm:flex block items-center justify-evenly sm:mt-0 -mt-[300px]">
       <div className='sm:w-1/2 w-full md:h-96 lg:h-[600px] h-[600px] sm:-ml-[0%] ml-0'>
       <Canvas flat camera={{fov: 40, position: [0, 0, 5] }} resize={{ scroll: true, debounce: { scroll: 50, resize: 0 } }}>
         <ambientLight />
