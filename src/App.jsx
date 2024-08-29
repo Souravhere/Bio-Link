@@ -10,11 +10,13 @@ import Founder from './Components/Founder';
 import Navbars from './Components/Navbar';
 import NavComp from './Components/NavComp';
 import StaggeredText from './Components/Animation/StaggeredText';
+import Herosection from './Components/Herosection';
 
 function App() {
   return (
   <>
-  <NavComp/>
+  {/* <NavComp/> */}
+  <Herosection/>
   {/* <Navbars/> */}
   {/* <Founder/> */}
     <div className="w-full bg-[#e5e5e1] text-[#000000] dark:bg-black md:h-96 lg:h-[600px] sm:flex block items-center justify-evenly">
