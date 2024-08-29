@@ -23,14 +23,14 @@ export default function Herosection() {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl overflow-y-hidden">
               Data to enrich your online business
             </h1>
-            <p className="mt-6 leading-4 sm:w-[500px] text-center mx-auto text-gray-600 text-sm">
+            <p className="mt-6 leading-4 sm:w-[500px] text-center sm:px-0 p-4 mx-auto text-gray-600 text-sm">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
               fugiat veniam occaecat fugiat aliqua.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 sm:flex block items-center justify-center gap-x-6 sm:px-0 px-6 ">
               <a
                 href="#">
-                <div className='font-semibold bg-[#d6ff01] p-4'>
+                <div className='font-semibold bg-[#d6ff01] p-4 sm:my-0 my-3'>
                 <StaggeredText text="Contact Us" hoverColor="gray" baseColor="black" className='font-semibold text-base'/>
                 </div>
               </a>

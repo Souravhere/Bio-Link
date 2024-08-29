@@ -11,10 +11,12 @@ import Navbars from './Components/Navbar';
 import NavComp from './Components/NavComp';
 import StaggeredText from './Components/Animation/StaggeredText';
 import Herosection from './Components/Herosection';
+import Textscroll from './Components/Animation/Textscroll';
 
 function App() {
   return (
   <>
+  <Textscroll/>
   <NavComp/>
   <Herosection/>
   {/* <Navbars/> */}
