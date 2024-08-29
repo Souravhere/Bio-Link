@@ -12,7 +12,7 @@ function NavComp() {
       <div className='flex gap-5'>
         <NavLink>
             {/* <p>Home</p> */}
-            <StaggeredText text="Home" hoverColor="gray" baseColor="black" className='font-semibold text-base'/>
+            <StaggeredText text="Home" hoverColor="black" baseColor="black" className='font-semibold text-base'/>
         </NavLink>
         <NavLink>
             <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-base'/>

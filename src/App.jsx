@@ -9,6 +9,7 @@ import Textanimation from './Components/Textanimation';
 import Founder from './Components/Founder';
 import Navbars from './Components/Navbar';
 import NavComp from './Components/NavComp';
+import StaggeredText from './Components/Animation/StaggeredText';
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
       </Canvas>
       </div>
       <div className='sm:w-1/2 w-full relative sm:mt-0 -mt-20'>
-        <h1 className='text-black dark:text-white text-3xl font-semibold text-center my-3'>Projects</h1>
+        {/* <h1 className='text-black dark:text-white text-3xl font-semibold text-center my-3'>Projects</h1> */}
+        <StaggeredText text='Projects' className='text-black dark:text-white text-3xl font-semibold text-center my-3'/>
         <div className='sm:h-[400px] h-[700px] overflow-y-scroll w-full'>
           <Pojectcard />
         </div>

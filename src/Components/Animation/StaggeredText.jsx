@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Component for staggered text animations
-const StaggeredText = ({ text, hoverColor = "red", baseColor = "black", className = "" }) => {
+const StaggeredText = ({ text, hoverColor = "gray", baseColor = "black", className = "" }) => {
   const DURATION = 0.25;
   const STAGGER = 0.05; // Slight delay between each character
 
