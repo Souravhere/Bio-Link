@@ -1,57 +1,64 @@
-import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
-function StaggeredText({ text, hoverColor = 'blue', baseColor = 'black' }) {
-  const letters = text.split(''); // Split text into letters
-
-  // Animation variants for hover effect
-  const hoverVariants = {
-    initial: {
-      y: 0,
-      opacity: 1,
-    },
-    hover: {
-      y: -30, // Move up by 30px
-      opacity: 0,
-      transition: { duration: 0.3 },
-    },
-    exit: {
-      y: 30, // Enter from below
-      opacity: 0,
-    },
-    appear: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.3 },
-    },
-  };
+// Component for staggered text animations
+const StaggeredText = ({ text, hoverColor = "red", baseColor = "black", className = "" }) => {
+  const DURATION = 0.25;
+  const STAGGER = 0.05; // Slight delay between each character
 
   return (
     <motion.div
-      className="inline-block"
+      className={`relative block overflow-hidden whitespace-nowrap ${className}`}
       initial="initial"
-      animate="appear"
-      exit="exit"
-      style={{ color: baseColor }}
-      whileHover={{ color: hoverColor }}
+      whileHover="hovered"
+      style={{
+        color: baseColor,
+        lineHeight: 1,
+      }}
     >
-      {letters.map((letter, index) => (
-        <AnimatePresence key={index}>
+      <div className="relative">
+        {text.split("").map((char, i) => (
           <motion.span
-            key={letter + index}
-            className="inline-block relative"
-            variants={hoverVariants}
-            initial="initial"
-            animate="appear"
-            exit="exit"
-            whileHover="hover"
+            key={i}
+            className="inline-block"
+            variants={{
+              initial: { y: 0 },
+              hovered: { y: "-100%" },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
           >
-            {letter === ' ' ? '\u00A0' : letter} {/* Non-breaking space for space characters */}
+            {char === " " ? "\u00A0" : char}
           </motion.span>
-        </AnimatePresence>
-      ))}
+        ))}
+      </div>
+      <div className="absolute inset-0 top-0">
+        {text.split("").map((char, i) => (
+          <motion.span
+            key={i}
+            className="inline-block"
+            variants={{
+              initial: { y: "100%" },
+              hovered: { y: 0 },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
+            style={{
+              color: hoverColor,
+            }}
+          >
+            {char === " " ? "\u00A0" : char}
+          </motion.span>
+        ))}
+      </div>
     </motion.div>
   );
-}
+};
 
 export default StaggeredText;
