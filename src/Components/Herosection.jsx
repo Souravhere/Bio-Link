@@ -3,6 +3,11 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import StaggeredText from './Animation/StaggeredText'
 
+import { CgWebsite } from "react-icons/cg";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { IoShareSocialOutline } from "react-icons/io5";
+import { FaRegImages } from "react-icons/fa";
+import { MdOutlineTextSnippet } from "react-icons/md";
 
 export default function Herosection() {
 
@@ -36,10 +41,22 @@ export default function Herosection() {
               </a>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
               <div className='font-semibold bg-white p-4'>
-            <StaggeredText text="Learn More →" hoverColor="gray" baseColor="black" className='font-semibold text-base'/>
-            </div>
+                <StaggeredText text="Learn More →" hoverColor="gray" baseColor="black" className='font-semibold text-base'/>
+              </div>
               </a>
             </div>
+          </div>
+          <div className='flex items-center gap-3 uppercase font-semibold text-sm'>
+            <CgWebsite size={20} />
+            website
+            <MdOutlineDesignServices size={20} />
+            graphics design
+            <IoShareSocialOutline size={20} />
+            social handles
+            <FaRegImages size={20} />
+            poster making   
+            <MdOutlineTextSnippet size={20} />
+            content wrting
           </div>
         </div>
         </div>
