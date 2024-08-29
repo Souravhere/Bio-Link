@@ -46,7 +46,7 @@ export default function Herosection() {
               </a>
             </div>
           </div>
-          <div className='flex items-center gap-3 uppercase font-semibold text-sm'>
+          {/* <div className='flex items-center gap-3 uppercase font-semibold text-sm'>
             <CgWebsite size={20} />
             website
             <MdOutlineDesignServices size={20} />
@@ -57,7 +57,7 @@ export default function Herosection() {
             poster making   
             <MdOutlineTextSnippet size={20} />
             content wrting
-          </div>
+          </div> */}
         </div>
         </div>
     </>

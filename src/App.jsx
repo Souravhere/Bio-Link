@@ -16,7 +16,7 @@ import Textscroll from './Components/Animation/Textscroll';
 function App() {
   return (
   <>
-  <Textscroll/>
+  {/* <Textscroll/> */}
   <NavComp/>
   <Herosection/>
   {/* <Navbars/> */}

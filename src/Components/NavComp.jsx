@@ -1,34 +1,70 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import StaggeredText from './Animation/StaggeredText';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function NavComp() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <Router>
-    <div className='w-full flex items-center justify-between py-4 px-3 bg-[#e5e5e1] dark:bg-black dark:text-white'>
-      {/* <h1 className='font-semibold text-2xl'>Byyte.co</h1> */}
-      <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl'/>
-      <div className='flex gap-5'>
-        <NavLink>
-            {/* <p>Home</p> */}
-            <StaggeredText text="Home" hoverColor="black" baseColor="black" className='font-semibold text-base'/>
-        </NavLink>
-        <NavLink>
-            <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-base'/>
-        </NavLink>
-        <NavLink>
-            <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-base'/>
-        </NavLink>
-      </div>
-      <a href="">
-        <div className='font-semibold bg-[#d6ff01] py-2 px-2 rounded-lg'>
-        <StaggeredText text="Contact Us" hoverColor="gray" baseColor="black" className='font-semibold text-base'/>
+      <div className='w-full flex items-center justify-between py-4 px-3 bg-[#e5e5e1] dark:bg-black dark:text-white'>
+        <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' />
+
+        <div className='flex items-center gap-5 md:hidden'>
+          <button onClick={toggleMenu} className='text-2xl'>
+            {isOpen ? '✖️' : '☰'}
+          </button>
         </div>
-      </a>
-    </div>
+
+        <div className='hidden md:flex gap-5'>
+          <NavLink>
+            <StaggeredText text="Home" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+          </NavLink>
+          <NavLink>
+            <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+          </NavLink>
+          <NavLink>
+            <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+          </NavLink>
+        </div>
+        
+        <a href="">
+          <div className='font-semibold bg-[#d6ff01] py-2 px-2 rounded-lg'>
+            <StaggeredText text="Contact Us" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+          </div>
+        </a>
+
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              className='fixed top-0 right-0 w-3/4 h-full bg-[#e5e5e1] dark:bg-black text-white flex flex-col items-center pt-20'
+              initial={{ opacity: 0, x: '100%' }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: '100%' }}
+              transition={{ duration: 0.3 }}
+            >
+              <button onClick={toggleMenu} className='text-3xl mb-8'>
+                ✖️
+              </button>
+              <NavLink onClick={toggleMenu}>
+                <StaggeredText text="Home" hoverColor="black" baseColor="black" className='font-semibold text-base' />
+              </NavLink>
+              <NavLink onClick={toggleMenu}>
+                <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+              </NavLink>
+              <NavLink onClick={toggleMenu}>
+                <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+              </NavLink>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </Router>
-  )
+  );
 }
 
-export default NavComp
+export default NavComp;
