@@ -14,9 +14,9 @@ function NavComp() {
       <div className='w-full flex items-center justify-between py-4 px-3 bg-[#e5e5e1] dark:bg-black dark:text-white'>
         <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' />
 
-        <div className='flex items-center gap-5 md:hidden'>
+        <div className='md:hidden absolute top-2 right-3'>
           <button onClick={toggleMenu} className='text-2xl'>
-            {isOpen ? '✖️' : '☰'}
+            {isOpen ? '☰' : '☰'}
           </button>
         </div>
 
@@ -33,7 +33,7 @@ function NavComp() {
         </div>
         
         <a href="">
-          <div className='font-semibold bg-[#d6ff01] py-2 px-2 rounded-lg'>
+          <div className='sm:block hidden font-semibold bg-[#d6ff01] py-2 px-2 rounded-lg'>
             <StaggeredText text="Contact Us" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
           </div>
         </a>
@@ -41,23 +41,23 @@ function NavComp() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className='fixed top-0 right-0 w-3/4 h-full bg-[#e5e5e1] dark:bg-black text-white flex flex-col items-center pt-20'
+              className='fixed z-50 top-0 right-0 w-3/4 h-full bg-[#e5e5e1] dark:bg-black text-white flex flex-col items-center pt-20'
               initial={{ opacity: 0, x: '100%' }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: '100%' }}
               transition={{ duration: 0.3 }}
             >
-              <button onClick={toggleMenu} className='text-3xl mb-8'>
+              <button onClick={toggleMenu} className='text-2xl mb-8 absolute top-3 right-3'>
                 ✖️
               </button>
               <NavLink onClick={toggleMenu}>
-                <StaggeredText text="Home" hoverColor="black" baseColor="black" className='font-semibold text-base' />
+                <StaggeredText text="Home" hoverColor="black" baseColor="black" className='font-semibold text-3xl my-2' />
               </NavLink>
               <NavLink onClick={toggleMenu}>
-                <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+                <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-3xl my-2' />
               </NavLink>
               <NavLink onClick={toggleMenu}>
-                <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+                <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold  text-3xl my-2' />
               </NavLink>
             </motion.div>
           )}
