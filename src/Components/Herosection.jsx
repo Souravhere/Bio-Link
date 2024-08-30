@@ -18,14 +18,16 @@ export default function Herosection() {
     <>
         <div className='flex items-center justify-center bg-[#e5e5e1]'>
         <div className="mx-auto max-w-2xl py-32 h-screen overflow-y-hidden">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div className='w-full'>
+          <div className="sm:mb-8 sm:flex sm:justify-center sm:mx-0 mx-auto">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
+            Our Creative Process {' '}
               <a href="#" className="font-semibold text-indigo-600">
                 <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                Read docs <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
+          </div>
           </div>
           <div className="text-center">
             <TypingEffect/>
