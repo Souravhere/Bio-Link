@@ -1,5 +1,5 @@
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 export const Pagelink = () => {
@@ -38,6 +38,7 @@ export const Pagelink = () => {
 
 const AnimatedDiv = ({ heading, imgSrc, subheading }) => {
   const ref = useRef(null);
+  const [isTouch, setIsTouch] = useState(false);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -49,6 +50,8 @@ const AnimatedDiv = ({ heading, imgSrc, subheading }) => {
   const left = useTransform(mouseXSpring, [0.5, -0.5], ["60%", "70%"]);
 
   const handleMouseMove = (e) => {
+    if (isTouch) return;
+
     const rect = ref.current.getBoundingClientRect();
 
     const width = rect.width;
@@ -64,12 +67,23 @@ const AnimatedDiv = ({ heading, imgSrc, subheading }) => {
     y.set(yPct);
   };
 
+  const handleTouchStart = () => {
+    setIsTouch(true);
+  };
+
+  const handleTouchEnd = () => {
+    setIsTouch(false);
+  };
+
   return (
     <motion.div
       ref={ref}
       onMouseMove={handleMouseMove}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       initial="initial"
-      whileHover="whileHover"
+      animate={isTouch ? "whileHover" : "initial"}
+      whileHover={!isTouch && "whileHover"}
       className="group relative flex items-center justify-between border-b-2 border-black py-4 transition-colors duration-500 hover:border-gray-700 md:py-8"
     >
       <div>
