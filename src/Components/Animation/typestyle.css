@@ -1,8 +1,0 @@
-@layer components {
-    .text-gradient {
-      background: linear-gradient(90deg, #f3a1a1, #f3e7a1, #a1c8f3);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-  
