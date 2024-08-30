@@ -165,7 +165,7 @@ const AnimatedDiv = ({ heading, imgSrc, subheading }) => {
           transition={{ type: "spring" }}
           className="relative z-10 p-4"
         >
-          <FiArrowRight className="text-5xl text-gray-700" />
+          <FiArrowRight className="text-5xl text-gray-700 sm:block hidden" />
         </motion.div>
       </div>
     </motion.div>
