@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import StaggeredText from './Animation/StaggeredText'
+import { motion } from 'framer-motion';
 
 import { CgWebsite } from "react-icons/cg";
 import { MdOutlineDesignServices } from "react-icons/md";
@@ -10,6 +11,19 @@ import { FaRegImages } from "react-icons/fa";
 import { MdOutlineTextSnippet } from "react-icons/md";
 
 export default function Herosection() {
+  const textVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+    exit: { opacity: 0 }
+  };
+  
+  const words = [
+    "Breathtaking Websites",
+    "Vivid Posters",
+    "Strategic Marketing"
+  ];
+  
+  const textColor = ["#FF5733", "#33FF57", "#3357FF"]; // Add more colors as needed
 
   return (
     <>
@@ -25,9 +39,19 @@ export default function Herosection() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl overflow-y-hidden">
-            Transforming Your Vision into
-            </h1>
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl overflow-y-hidden">
+      Transforming Your Vision with{' '}
+      <motion.span
+        key={text}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="font-bold text-gradient"
+      >
+        {text}
+      </motion.span>
+    </h1>
             <p className="mt-6 leading-4 sm:w-[500px] text-center sm:px-0 p-4 mx-auto text-gray-600 text-sm">
             At Byyte.co, we craft visually stunning websites, captivating designs, and data-driven marketing strategies to elevate your brand.
             </p>
