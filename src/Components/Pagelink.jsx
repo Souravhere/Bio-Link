@@ -1,5 +1,5 @@
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 export const Pagelink = () => {
@@ -38,7 +38,15 @@ export const Pagelink = () => {
 
 const AnimatedDiv = ({ heading, imgSrc, subheading }) => {
   const ref = useRef(null);
-  const [isTouch, setIsTouch] = useState(false);
+  const [isTapped, setIsTapped] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", checkMobile);
+    checkMobile(); // Initial check
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -50,8 +58,6 @@ const AnimatedDiv = ({ heading, imgSrc, subheading }) => {
   const left = useTransform(mouseXSpring, [0.5, -0.5], ["60%", "70%"]);
 
   const handleMouseMove = (e) => {
-    if (isTouch) return;
-
     const rect = ref.current.getBoundingClientRect();
 
     const width = rect.width;
@@ -67,90 +73,101 @@ const AnimatedDiv = ({ heading, imgSrc, subheading }) => {
     y.set(yPct);
   };
 
-  const handleTouchStart = () => {
-    setIsTouch(true);
-  };
-
-  const handleTouchEnd = () => {
-    setIsTouch(false);
+  const handleTap = () => {
+    if (isMobile) {
+      setIsTapped(!isTapped);
+    }
   };
 
   return (
     <motion.div
       ref={ref}
-      onMouseMove={handleMouseMove}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
+      onMouseMove={!isMobile ? handleMouseMove : null}
+      onTap={handleTap}
+      onClick={handleTap}
       initial="initial"
-      animate={isTouch ? "whileHover" : "initial"}
-      whileHover={!isTouch && "whileHover"}
+      whileHover={!isMobile ? "whileHover" : ""}
+      animate={isTapped && isMobile ? "whileHover" : "initial"}
       className="group relative flex items-center justify-between border-b-2 border-black py-4 transition-colors duration-500 hover:border-gray-700 md:py-8"
     >
-      <div>
-        <motion.span
+      <div className="flex items-center justify-between w-full">
+        <div>
+          <motion.span
+            variants={{
+              initial: { x: 0 },
+              whileHover: { x: -16 },
+            }}
+            transition={{
+              type: "spring",
+              staggerChildren: 0.075,
+              delayChildren: 0.25,
+            }}
+            className="relative z-0 block text-4xl font-bold text-black transition-colors duration-500 group-hover:text-gray-700 md:text-6xl overflow-x-visible"
+          >
+            {heading.split("").map((l, i) => (
+              <motion.span
+                variants={{
+                  initial: { x: 0 },
+                  whileHover: { x: 16 },
+                }}
+                transition={{ type: "spring" }}
+                className="inline-block"
+                key={i}
+              >
+                {l}
+              </motion.span>
+            ))}
+          </motion.span>
+          <span className="relative z-0 mt-2 block text-base text-black transition-colors duration-500 group-hover:text-gray-700 overflow-x-visible">
+            {subheading}
+          </span>
+        </div>
+
+        {/* Show image inside div on mobile */}
+        {isMobile ? (
+          isTapped && (
+            <img
+              src={imgSrc}
+              className="z-30 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
+              alt={`Image representing ${heading}`}
+            />
+          )
+        ) : (
+          <motion.img
+            style={{
+              top,
+              left,
+              translateX: "-50%",
+              translateY: "-50%",
+            }}
+            variants={{
+              initial: { scale: 0, rotate: "-12.5deg" },
+              whileHover: { scale: 1, rotate: "12.5deg" },
+            }}
+            transition={{ type: "spring" }}
+            src={imgSrc}
+            className="fixed z-30 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
+            alt={`Image representing ${heading}`}
+          />
+        )}
+
+        <motion.div
           variants={{
-            initial: { x: 0 },
-            whileHover: { x: -16 },
+            initial: {
+              x: "25%",
+              opacity: 0,
+            },
+            whileHover: {
+              x: "0%",
+              opacity: 1,
+            },
           }}
-          transition={{
-            type: "spring",
-            staggerChildren: 0.075,
-            delayChildren: 0.25,
-          }}
-          className="relative z-0 block text-4xl font-bold text-black transition-colors duration-500 group-hover:text-gray-700 md:text-6xl overflow-x-visible"
+          transition={{ type: "spring" }}
+          className="relative z-10 p-4"
         >
-          {heading.split("").map((l, i) => (
-            <motion.span
-              variants={{
-                initial: { x: 0 },
-                whileHover: { x: 16 },
-              }}
-              transition={{ type: "spring" }}
-              className="inline-block"
-              key={i}
-            >
-              {l}
-            </motion.span>
-          ))}
-        </motion.span>
-        <span className="relative z-0 mt-2 block text-base text-black transition-colors duration-500 group-hover:text-gray-700 overflow-x-visible">
-          {subheading}
-        </span>
+          <FiArrowRight className="text-5xl text-gray-700" />
+        </motion.div>
       </div>
-
-      <motion.img
-        style={{
-          top,
-          left,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
-        variants={{
-          initial: { scale: 0, rotate: "-12.5deg" },
-          whileHover: { scale: 1, rotate: "12.5deg" },
-        }}
-        transition={{ type: "spring" }}
-        src={imgSrc}
-        className="fixed z-30 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
-        alt={`Image representing ${heading}`}
-      />
-
-      <motion.div
-        variants={{
-          initial: {
-            x: "25%",
-            opacity: 0,
-          },
-          whileHover: {
-            x: "0%",
-            opacity: 1,
-          },
-        }}
-        transition={{ type: "spring" }}
-        className="relative z-10 p-4"
-      >
-        <FiArrowRight className="text-5xl text-gray-700" />
-      </motion.div>
     </motion.div>
   );
 };
