@@ -1,64 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-function Pojectcard() {
-  const projects = [
-    {
-      id: 1,
-      title: "Vigge Smart",
-      acronym: "VG",
-      link: "#",
-    },
-    {
-      id: 2,
-      title: "Project Apollo",
-      acronym: "PA",
-      link: "#",
-    },
-    {
-      id: 3,
-      title: "Neptune Exploration",
-      acronym: "NE",
-      link: "#",
-    },
-    {
-      id: 4,
-      title: "Project Apollo",
-      acronym: "PA",
-      link: "#",
-    },
-    {
-      id: 5,
-      title: "Neptune Exploration",
-      acronym: "NE",
-      link: "#",
-    },
-  ];
+const images = [
+  "./our-project-3.png",
+  "./our-project-3.png",
+  "./our-project-3.png",
+  "./our-project-3.png",
+  "./our-project-3.png",
+];
+
+const Pojectcard = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, []);
 
   return (
-    <div>
-      {projects.map((project) => (
-        <div
-          key={project.id}
-          className="mx-auto my-4 max-w-sm p-6 bg-[#ffffff] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-        >
-          <a href={project.link}>
-            <div className="py-1 px-2 bg-purple-500/80 inline-block rounded-full font-semibold">
-              {project.acronym}
-            </div>
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-              {project.title}
-            </h5>
-          </a>
-          <a
-            href={project.link}
-            className="inline-flex font-medium items-center text-blue-600 hover:underline"
-          >
-            See more details
-          </a>
-        </div>
-      ))}
+    <div className="relative w-full overflow-hidden">
+      <div className="relative h-64 overflow-hidden rounded-lg md:h-[450px] overflow-y-hidden">
+        <AnimatePresence>
+          <motion.img
+            key={currentIndex}
+            src={images[currentIndex]}
+            alt="Carousel Image"
+            className="absolute block w-full h-fit object-fill sm:-mt-4 overflow-y-hidden"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.5 }}
+          />
+        </AnimatePresence>
+      </div>
     </div>
   );
-}
+};
 
 export default Pojectcard;

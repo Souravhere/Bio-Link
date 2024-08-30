@@ -37,8 +37,8 @@ export default function Herosection() {
             <div className="mt-10 sm:flex block items-center justify-center gap-x-6 sm:px-0 px-6 ">
               <a
                 href="#">
-                <div className='font-semibold bg-[#d6ff01] p-4 sm:my-0 my-3'>
-                <StaggeredText text="Contact Us" hoverColor="gray" baseColor="black" className='font-semibold text-base'/>
+                <div className='font-semibold bg-indigo-500 p-4 sm:my-0 my-3'>
+                <StaggeredText text="Contact Us" hoverColor="white" baseColor="white" className='font-semibold text-base'/>
                 </div>
               </a>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
