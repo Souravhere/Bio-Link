@@ -1,8 +1,8 @@
 import { motion, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-const fontSize = 30;
-const padding = 15;
+const fontSize = 48;
+const padding = 8;
 const height = fontSize + padding;
 
 function Counter({ value }) {
@@ -20,7 +20,7 @@ function Counter({ value }) {
       },
       {
         rootMargin: '0px 0px -100px 0px',
-        threshold: 0.1, // Trigger when 10% of the component is visible
+        threshold: 0.1,
       }
     );
 
@@ -39,7 +39,7 @@ function Counter({ value }) {
     <div
       ref={counterRef}
       style={{ fontSize }}
-      className="flex space-x-3 overflow-hidden rounded bg-transparent px-2 leading-none text-gray-900"
+      className="flex space-x-3 overflow-hidden rounded bg-transparent font-bold text-white px-2 leading-none"
     >
       {startAnimation && (
         <>
@@ -54,14 +54,13 @@ function Counter({ value }) {
 
 function Digit({ place, targetValue }) {
   const [value, setValue] = useState(0);
-  const animatedValue = useSpring(0, { stiffness: 50, damping: 20 });
+  const animatedValue = useSpring(0, { stiffness: 20, damping: 12 });
 
   useEffect(() => {
-    // Update the animation when startAnimation is triggered
-    animatedValue.set(targetValue);
+    const adjustedValue = Math.floor((targetValue % (place * 10)) / place);
+    animatedValue.set(adjustedValue);
 
-    // Update the visual number over time
-    animatedValue.onChange((v) => setValue(Math.floor(v / place)));
+    animatedValue.onChange((v) => setValue(Math.floor(v)));
   }, [animatedValue, targetValue, place]);
 
   return (
@@ -75,8 +74,7 @@ function Digit({ place, targetValue }) {
 
 function Number({ mv, number }) {
   let y = useTransform(mv, (latest) => {
-    let placeValue = latest % 10;
-    let offset = (10 + number - placeValue) % 10;
+    let offset = (10 + number - latest) % 10;
 
     let memo = offset * height;
 
