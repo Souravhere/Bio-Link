@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaInstagram } from "react-icons/fa";
+import Counter from './Animation/Counter';
 
 const images = [
   "./our-project-3.png",
@@ -28,7 +29,8 @@ const Pojectcard = () => {
             <div className='flex w-full items-center justify-between sm:gap-4 gap-5 mt-5'>
                 <div className='w-1/2 h-36 dark:bg-gray-800 bg-gradient-to-r from-[#2432ef] to-[#7579ff] text-white p-2 rounded-lg hover:rounded-2xl duration-500'>
                 {/* <FaInstagram size={25} className='dark:text-white text-black' /> */}
-                <h1 className='font-bold text-5xl'>12 +</h1>
+                <Counter value={12}/>
+                {/* <h1 className='font-bold text-5xl'>12 +</h1> */}
                 <h3 className='font-bold text-3xl mt-5'>Websites</h3>
                 </div>
                 <div className='w-1/2 h-36 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
