@@ -26,32 +26,32 @@ const Pojectcard = () => {
   return (
     <div className='w-full bg-transparent sm:p-3 p-4'>
             <div className='flex w-full items-center justify-between sm:gap-4 gap-5 mt-5'>
-                <a href="">
-                <div className='w-full h-40 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
-                <FaInstagram size={25} className='dark:text-white text-black' />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, deserunt?</p>
+                <div className='w-1/2 h-40 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
+                {/* <FaInstagram size={25} className='dark:text-white text-black' /> */}
+                <h1 className='font-bold text-5xl'>12</h1>
+                <h3>Websites</h3>
+                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, a!</p> */}
                 </div>
-                </a>
-                <a href="">
-                <div className='w-full h-40 dark:bg-gray-800 bg-gray-200 rounded-lg'>
-                <FaInstagram size={25} className='dark:text-white text-black' />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, deserunt?</p>
+                <div className='w-1/2 h-40 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
+                {/* <FaInstagram size={25} className='dark:text-white text-black' /> */}
+                <h1 className='font-bold text-5xl'>12</h1>
+                <h3>Websites</h3>
+                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, a!</p> */}
                 </div>
-                </a>
             </div>
             <div className='flex items-center justify-center sm:gap-4 gap-5 mt-5'>
-                <a href="">
-                <div className='w-full h-40 dark:bg-gray-800 bg-gray-200 rounded-lg'>
-                <FaInstagram size={25} className='dark:text-white text-black' />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, deserunt?</p>
+            <div className='w-1/2 h-40 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
+                {/* <FaInstagram size={25} className='dark:text-white text-black' /> */}
+                <h1 className='font-bold text-5xl'>12</h1>
+                <h3>Websites</h3>
+                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, a!</p> */}
                 </div>
-                </a>
-                <a href="">
-                <div className='w-full h-40 dark:bg-gray-800 bg-gray-200 rounded-lg'>
-                <FaInstagram size={25} className='dark:text-white text-black' />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, deserunt?</p>
+                <div className='w-1/2 h-40 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
+                {/* <FaInstagram size={25} className='dark:text-white text-black' /> */}
+                <h1 className='font-bold text-5xl'>12</h1>
+                <h3>Websites</h3>
+                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, a!</p> */}
                 </div>
-                </a>
             </div>
       </div>
   );

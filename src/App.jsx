@@ -41,7 +41,7 @@ function App() {
       </div>
       <div className='sm:w-1/2 w-full relative sm:mt-0 -mt-20'>
         {/* <h1 className='text-black dark:text-white text-3xl font-semibold text-center my-3'>Projects</h1> */}
-        <StaggeredText text='Projects' className='text-black dark:text-white text-3xl font-semibold text-center my-3'/>
+        <StaggeredText text='Project Completed' className='text-black dark:text-white text-3xl font-semibold text-center my-3'/>
         <div className='sm:h-[400px] h-[700px] overflow-y-scroll w-full'>
           <Pojectcard />
         </div>
