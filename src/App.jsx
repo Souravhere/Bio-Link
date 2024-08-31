@@ -14,6 +14,7 @@ import Herosection from './Components/Herosection';
 import Textscroll from './Components/Animation/Textscroll';
 import { Pagelink } from './Components/Pagelink';
 import Faq from './Components/Faq';
+import TeamSection from './Components/TeamSection';
 
 function App() {
   return (
@@ -49,9 +50,7 @@ function App() {
       </div>
     </div>
     <Faq/>
-    <div className='w-full h-screen'></div>
-    {/* <Textanimation/> */}
-    {/* <div className='w-full h-screen bg-black'></div> */}
+    <TeamSection/>
   </>
   );
 }
