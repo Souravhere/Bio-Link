@@ -42,13 +42,14 @@ function App() {
       </div>
       <div className='sm:w-1/2 w-full relative sm:mt-0 -mt-20'>
         {/* <h1 className='text-black dark:text-white text-3xl font-semibold text-center my-3'>Projects</h1> */}
-        <StaggeredText text='Project Completed' className='text-black dark:text-white text-3xl font-semibold text-center my-3'/>
-        <div className='sm:h-[400px] h-[700px] overflow-y-scroll w-full'>
+        <h1 className='text-black dark:text-white text-3xl font-semibold text-center py-2'>Project Completed</h1>
+        <div className='sm:h-[400px] h-fit overflow-y-scroll w-full'>
           <Pojectcard />
         </div>
       </div>
     </div>
     <Faq/>
+    <div className='w-full h-screen'></div>
     {/* <Textanimation/> */}
     {/* <div className='w-full h-screen bg-black'></div> */}
   </>

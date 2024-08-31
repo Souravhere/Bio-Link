@@ -141,15 +141,21 @@ function Faq() {
   ];
 
   return (
-    <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" role="tablist">
+    <div className="w-full sm:flex rounded-lg dark:bg-gray-800 dark:border-gray-700 px-2">
+        <div className='sm:w-[30%] w-full sm:text-left sm:px-2 my-4'>
+            <h1 className='font-semibold sm:text-4xl py-2 sticky top-0 text-3xl sm:text-left text-center'>Frequently asked questions</h1>
+            <p className='font-semibold text-gray-400 mt-2 sm:text-left text-center sm:px-0 px-3'>I’m joking. Nobody asked any questions yet. I came up with them myself.</p>
+            {/* <img className='sm:block hidden' src="./our-project-3.png" alt="" /> */}
+        </div>
+        <div className='sm:w-[70%] w-full'>
+        <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" role="tablist">
         {tabs.map((tab) => (
           <li key={tab.id} className="me-2">
             <button
               onClick={() => setActiveTab(tab.id)}
               className={`inline-block p-4 ${
                 activeTab === tab.id
-                  ? 'text-blue-600 dark:text-blue-500 bg-gray-100 dark:bg-gray-800'
+                  ? 'text-white dark:text-blue-500 bg-indigo-500 dark:bg-gray-800'
                   : 'hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300'
               } rounded-ss-lg`}
             >
@@ -172,6 +178,7 @@ function Faq() {
           </motion.div>
         ))}
       </div>
+        </div>
     </div>
   );
 }
