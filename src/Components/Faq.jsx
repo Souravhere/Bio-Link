@@ -5,9 +5,69 @@ function Faq() {
   const [activeTab, setActiveTab] = useState('about');
 
   const tabs = [
-    { id: 'about', label: 'About', content: <h1>Hello from About</h1> },
-    { id: 'services', label: 'Services', content: <h1>Hello from Services</h1> },
-    { id: 'statistics', label: 'Facts', content: <h1>Hello from Facts</h1> },
+    {
+      id: 'about',
+      label: 'Website Development',
+      content: (
+        <div>
+          <h2 className="text-xl font-semibold">Website Development FAQs</h2>
+          <div className="mt-4">
+            <h3 className="font-medium">What is website development?</h3>
+            <p className="mt-2 text-gray-700">Website development is the process of creating and maintaining websites. It involves web design, web content development, client-side/server-side scripting, and network security configuration.</p>
+          </div>
+          <div className="mt-4">
+            <h3 className="font-medium">How long does it take to develop a website?</h3>
+            <p className="mt-2 text-gray-700">The time required for website development varies depending on the complexity and functionality required. On average, a simple website can take 4-6 weeks, while a more complex website may take several months.</p>
+          </div>
+          <div className="mt-4">
+            <h3 className="font-medium">What are the costs involved in website development?</h3>
+            <p className="mt-2 text-gray-700">Costs can vary widely based on the website's features, design, and complexity. A basic website may cost between $1,000 and $5,000, while more advanced websites with custom features can cost $10,000 or more.</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'services',
+      label: 'Graphic Design',
+      content: (
+        <div>
+          <h2 className="text-xl font-semibold">Graphic Design FAQs</h2>
+          <div className="mt-4">
+            <h3 className="font-medium">What is graphic design?</h3>
+            <p className="mt-2 text-gray-700">Graphic design is the art and practice of planning and projecting ideas and experiences with visual and textual content. It involves creating visual content to communicate messages and solve problems.</p>
+          </div>
+          <div className="mt-4">
+            <h3 className="font-medium">How important is graphic design for a business?</h3>
+            <p className="mt-2 text-gray-700">Graphic design is crucial for businesses as it helps create a strong brand identity, enhances marketing materials, and attracts customers. Effective design can make a significant impact on a company's image and success.</p>
+          </div>
+          <div className="mt-4">
+            <h3 className="font-medium">What types of graphic design services are available?</h3>
+            <p className="mt-2 text-gray-700">Graphic design services can include logo design, branding, print design, digital design, and illustration. Each type of service helps to communicate and market a business's message and values.</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'statistics',
+      label: 'Social Media Management',
+      content: (
+        <div>
+          <h2 className="text-xl font-semibold">Social Media Management FAQs</h2>
+          <div className="mt-4">
+            <h3 className="font-medium">What is social media management?</h3>
+            <p className="mt-2 text-gray-700">Social media management involves creating, scheduling, analyzing, and engaging with content posted on social media platforms. It aims to improve brand awareness, drive engagement, and achieve marketing goals.</p>
+          </div>
+          <div className="mt-4">
+            <h3 className="font-medium">Why is social media management important?</h3>
+            <p className="mt-2 text-gray-700">Effective social media management is important for building brand awareness, engaging with the audience, driving traffic to your website, and improving customer relations. It helps in maintaining a consistent online presence and achieving business objectives.</p>
+          </div>
+          <div className="mt-4">
+            <h3 className="font-medium">How often should social media posts be made?</h3>
+            <p className="mt-2 text-gray-700">The frequency of social media posts can vary based on the platform and audience engagement. Generally, it's recommended to post several times a week, but consistency and quality are more important than quantity.</p>
+          </div>
+        </div>
+      ),
+    },
   ];
 
   return (
