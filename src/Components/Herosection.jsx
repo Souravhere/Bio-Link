@@ -16,7 +16,7 @@ export default function Herosection() {
 
   return (
     <>
-        <div className='flex items-center justify-center bg-[#e5e5e1]'>
+        <div className='flex items-center justify-center bg-white'>
         <div className="mx-auto max-w-2xl py-32 h-screen overflow-y-hidden">
           <div className='w-full'>
           <div className="sm:mb-8 sm:flex sm:justify-center sm:mx-0 mx-auto">

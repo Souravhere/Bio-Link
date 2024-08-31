@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 export const Pagelink = () => {
   return (
-    <section className="bg-[#e5e5e1] text-black p-4 md:p-8 w-full">
+    <section className="bg-white text-black p-4 md:p-8 w-full">
         <h1 className="text-2xl font-semibold">Our Service</h1>
       <div className="mx-auto w-full">
         <AnimatedDiv

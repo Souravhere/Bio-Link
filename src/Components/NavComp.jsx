@@ -11,7 +11,7 @@ function NavComp() {
 
   return (
     <Router>
-      <div className='w-full flex items-center justify-between py-4 px-3 bg-[#e5e5e1] dark:bg-black dark:text-white'>
+      <div className='w-full flex items-center justify-between py-4 px-3 bg-white dark:bg-black dark:text-white'>
         <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' />
 
         <div className='md:hidden absolute top-2 right-3'>

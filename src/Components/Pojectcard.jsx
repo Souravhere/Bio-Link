@@ -26,13 +26,12 @@ const Pojectcard = () => {
   return (
     <div className='w-full bg-transparent sm:p-3 p-4'>
             <div className='flex w-full items-center justify-between sm:gap-4 gap-5 mt-5'>
-                <div className='w-1/2 h-40 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
+                <div className='w-1/2 h-36 dark:bg-gray-800 bg-gradient-to-r from-[#2432ef] to-[#7579ff] text-white p-2 rounded-lg hover:rounded-2xl duration-500'>
                 {/* <FaInstagram size={25} className='dark:text-white text-black' /> */}
-                <h1 className='font-bold text-5xl'>12</h1>
-                <h3>Websites</h3>
-                {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, a!</p> */}
+                <h1 className='font-bold text-5xl'>12 +</h1>
+                <h3 className='font-bold text-3xl mt-5'>Websites</h3>
                 </div>
-                <div className='w-1/2 h-40 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
+                <div className='w-1/2 h-36 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
                 {/* <FaInstagram size={25} className='dark:text-white text-black' /> */}
                 <h1 className='font-bold text-5xl'>12</h1>
                 <h3>Websites</h3>
