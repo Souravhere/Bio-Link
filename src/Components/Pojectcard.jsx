@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FaInstagram } from "react-icons/fa";
 
 const images = [
   "./our-project-3.png",
@@ -10,35 +11,49 @@ const images = [
 ];
 
 const Pojectcard = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000); // Change slide every 3 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentIndex((prevIndex) =>
+  //       prevIndex === images.length - 1 ? 0 : prevIndex + 1
+  //     );
+  //   }, 3000); // Change slide every 3 seconds
 
-    return () => clearInterval(interval); // Clear interval on component unmount
-  }, []);
+  //   return () => clearInterval(interval); // Clear interval on component unmount
+  // }, []);
 
   return (
-    <div className="relative w-full overflow-hidden">
-      <div className="relative h-64 overflow-hidden rounded-lg md:h-[450px] overflow-y-hidden">
-        <AnimatePresence>
-          <motion.img
-            key={currentIndex}
-            src={images[currentIndex]}
-            alt="Carousel Image"
-            className="absolute block w-full h-fit object-fill sm:-mt-4 overflow-y-hidden"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
-          />
-        </AnimatePresence>
+    <div className='w-full bg-transparent sm:p-3 p-4'>
+            <div className='flex w-full items-center justify-between sm:gap-4 gap-5 mt-5'>
+                <a href="">
+                <div className='w-full h-40 dark:bg-gray-800 bg-indigo-400 text-white p-2 rounded-lg'>
+                <FaInstagram size={25} className='dark:text-white text-black' />
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, deserunt?</p>
+                </div>
+                </a>
+                <a href="">
+                <div className='w-full h-40 dark:bg-gray-800 bg-gray-200 rounded-lg'>
+                <FaInstagram size={25} className='dark:text-white text-black' />
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, deserunt?</p>
+                </div>
+                </a>
+            </div>
+            <div className='flex items-center justify-center sm:gap-4 gap-5 mt-5'>
+                <a href="">
+                <div className='w-full h-40 dark:bg-gray-800 bg-gray-200 rounded-lg'>
+                <FaInstagram size={25} className='dark:text-white text-black' />
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, deserunt?</p>
+                </div>
+                </a>
+                <a href="">
+                <div className='w-full h-40 dark:bg-gray-800 bg-gray-200 rounded-lg'>
+                <FaInstagram size={25} className='dark:text-white text-black' />
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, deserunt?</p>
+                </div>
+                </a>
+            </div>
       </div>
-    </div>
   );
 };
 
