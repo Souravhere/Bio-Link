@@ -13,6 +13,7 @@ import StaggeredText from './Components/Animation/StaggeredText';
 import Herosection from './Components/Herosection';
 import Textscroll from './Components/Animation/Textscroll';
 import { Pagelink } from './Components/Pagelink';
+import Faq from './Components/Faq';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         </div>
       </div>
     </div>
+    <Faq/>
     {/* <Textanimation/> */}
     {/* <div className='w-full h-screen bg-black'></div> */}
   </>
