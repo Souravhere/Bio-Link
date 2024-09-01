@@ -13,10 +13,8 @@ import TeamSection from './Components/TeamSection';
 import Footer from './Components/Footer';
 import TestimonialsSection from './TestimonialsSection';
 import Textscroll from './Components/Animation/Textscroll';
-import useSmoothScroll from './Hooks/UseSmoothScroll';
 
 function App() {
-  useSmoothScroll();
   return (
   <div>
   <div className='absolute bottom-0 w-full overflow-x-hidden h-[60%] bg-transparent overflow-y-hidden'>

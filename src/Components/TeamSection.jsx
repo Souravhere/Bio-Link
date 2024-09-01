@@ -76,13 +76,13 @@ const TeamSection = () => {
               <img
                 className="sm:w-56 sm:h-full rounded-lg"
                 src="/team-4.jpg"
-                alt="Vansh Chaturvedi"
+                alt="Sourav Chhimpa"
               />
             <div className="p-3 py-2">
               <h3 className="text-xl font-bold tracking-tight  dark:text-white">
-                <a href="#">Vansh Chaturvedi</a>
+                <a href="#">Sourav Chhimpa</a>
               </h3>
-              <span className=" dark:text-gray-400">Founder / Management</span>
+              <span className=" dark:text-gray-400">Co Founder / UIX</span>
               <p className="mt-3 mb-4 font-light  dark:text-gray-400">
                 Bonnie drives the technical strategy of the flowbite platform and brand.
               </p>
@@ -96,13 +96,13 @@ const TeamSection = () => {
               <img
                 className="sm:w-56 sm:h-full rounded-lg"
                 src="/team-5.jpg"
-                alt="Vansh Chaturvedi"
+                alt="Ruchika Jangid"
               />
             <div className="p-3 py-2">
               <h3 className="text-xl font-bold tracking-tight  dark:text-white">
-                <a href="#">Vansh Chaturvedi</a>
+                <a href="#">Ruchika Jangid</a>
               </h3>
-              <span className=" dark:text-gray-400">Founder / Management</span>
+              <span className=" dark:text-gray-400">Community Manager</span>
               <p className="mt-3 mb-4 font-light  dark:text-gray-400">
                 Bonnie drives the technical strategy of the flowbite platform and brand.
               </p>
@@ -116,13 +116,13 @@ const TeamSection = () => {
               <img
                 className="sm:w-56 sm:h-full rounded-lg"
                 src="/team-2.jpg"
-                alt="Vansh Chaturvedi"
+                alt="Prashank Panday"
               />
             <div className="p-3 py-2">
               <h3 className="text-xl font-bold tracking-tight  dark:text-white">
-                <a href="#">Vansh Chaturvedi</a>
+                <a href="#">Prashank Panday</a>
               </h3>
-              <span className=" dark:text-gray-400">Founder / Management</span>
+              <span className=" dark:text-gray-400">Influencer Marketing Coordinator</span>
               <p className="mt-3 mb-4 font-light  dark:text-gray-400">
                 Bonnie drives the technical strategy of the flowbite platform and brand.
               </p>
