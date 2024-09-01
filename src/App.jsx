@@ -13,18 +13,20 @@ import TeamSection from './Components/TeamSection';
 import Footer from './Components/Footer';
 import TestimonialsSection from './TestimonialsSection';
 import Textscroll from './Components/Animation/Textscroll';
+import useSmoothScroll from './Hooks/UseSmoothScroll';
 
 function App() {
+  useSmoothScroll();
   return (
-  <>
-  <div className='w-full overflow-x-hidden'>
-  <div  className='w-[120%] px-0 -ml-8 absolute bg-indigo-500 sm:block sm:bottom-[15%] bottom-[15%] -rotate-6'>
-    <Textscroll/>
-  </div>
-  <div  className='w-[120%] px-0 -ml-8 absolute bg-indigo-500 sm:block sm:bottom-[1%] bottom-[5%] -rotate-6'>
-    <Textscroll/>
-  </div>
-  </div>
+  <div>
+  <div className='absolute bottom-0 w-full overflow-x-hidden h-[50%] bg-transparent overflow-y-hidden'>
+      <div className='absolute w-[120%] bg-indigo-500 sm:block sm:bottom-[25%] bottom-[25%] -rotate-6 inset-x-1/2 transform -translate-x-1/2 z-10'>
+        <Textscroll />
+      </div>
+      <div className='absolute w-[120%] bg-indigo-500 sm:block sm:bottom-[1%] bottom-[5%] -rotate-6 inset-x-1/2 transform -translate-x-1/2 z-10'>
+        <Textscroll />
+      </div>
+    </div>
   {/* <div className='w-full absolute bottom-[20%] sm:hidden block'>
     <Textscroll/>
   </div> */}
@@ -61,7 +63,7 @@ function App() {
     {/* <TeamSection/> */}
     <TestimonialsSection/>
     <Footer />
-  </>
+  </div>
   );
 }
 

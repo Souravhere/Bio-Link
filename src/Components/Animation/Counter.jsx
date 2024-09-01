@@ -1,5 +1,5 @@
-import { motion, useSpring, useTransform } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { motion, useSpring, useTransform } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 
 const fontSize = 48;
 const padding = 8;
@@ -43,7 +43,6 @@ function Counter({ value }) {
     >
       {startAnimation && (
         <>
-          {/* <Digit place={100} targetValue={value} /> */}
           <Digit place={10} targetValue={value} />
           <Digit place={1} targetValue={value} />
         </>
@@ -60,7 +59,9 @@ function Digit({ place, targetValue }) {
     const adjustedValue = Math.floor((targetValue % (place * 10)) / place);
     animatedValue.set(adjustedValue);
 
-    animatedValue.onChange((v) => setValue(Math.floor(v)));
+    const unsubscribe = animatedValue.on("change", (v) => setValue(Math.floor(v)));
+
+    return () => unsubscribe(); // Cleanup the subscription on component unmount
   }, [animatedValue, targetValue, place]);
 
   return (
@@ -75,7 +76,6 @@ function Digit({ place, targetValue }) {
 function Number({ mv, number }) {
   let y = useTransform(mv, (latest) => {
     let offset = (10 + number - latest) % 10;
-
     let memo = offset * height;
 
     if (offset > 5) {
