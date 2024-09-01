@@ -11,6 +11,7 @@ import { Pagelink } from './Components/Pagelink';
 import Faq from './Components/Faq';
 import TeamSection from './Components/TeamSection';
 import Footer from './Components/Footer';
+import TestimonialsSection from './TestimonialsSection';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
     </div>
     <Faq/>
     {/* <TeamSection/> */}
+    <TestimonialsSection/>
     <Footer />
   </>
   );
