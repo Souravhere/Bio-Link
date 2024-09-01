@@ -10,25 +10,24 @@ function NavComp() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <Router>
       <div className='w-full flex items-center justify-between py-4 px-3 bg-white dark:bg-black dark:text-white'>
         <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' />
 
-        <div className='md:hidden absolute top-2 right-3'>
+        <div className='md:hidden absolute top-2 right-5'>
           <button onClick={toggleMenu} className='text-2xl'>
             {isOpen ? '☰' : '☰'}
           </button>
         </div>
 
         <div className='hidden md:flex gap-5'>
-          <NavLink>
-            <StaggeredText text="Home" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+          <NavLink to='/'>
+            <StaggeredText text="Home" hoverColor="gray" baseColor="black" className='font-semibold text-lg' />
           </NavLink>
-          <NavLink>
-            <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+          <NavLink to='aboutus'>
+            <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-lg' />
           </NavLink>
-          <NavLink>
-            <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-base' />
+          <NavLink to='Services'>
+            <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-lg' />
           </NavLink>
         </div>
         
@@ -47,23 +46,22 @@ function NavComp() {
               exit={{ opacity: 0, x: '100%' }}
               transition={{ duration: 0.3 }}
             >
-              <button onClick={toggleMenu} className='text-2xl mb-8 absolute top-3 right-3'>
+              <button onClick={toggleMenu} className='text-2xl mb-8 absolute top-3 right-5'>
                 ✖️
               </button>
-              <NavLink onClick={toggleMenu}>
+              <NavLink onClick={toggleMenu} to='/'>
                 <StaggeredText text="Home" hoverColor="black" baseColor="black" className='font-semibold text-3xl my-2' />
               </NavLink>
-              <NavLink onClick={toggleMenu}>
+              <NavLink onClick={toggleMenu} to='aboutus'>
                 <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-3xl my-2' />
               </NavLink>
-              <NavLink onClick={toggleMenu}>
+              <NavLink onClick={toggleMenu} to='services'>
                 <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold  text-3xl my-2' />
               </NavLink>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
-    </Router>
   );
 }
 
