@@ -60,21 +60,21 @@ const OurClientsSay = () => {
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">What Our Clients Say</h2>
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-visible">
           <div
             ref={scrollContainerRef}
-            className="flex space-x-6 whitespace-nowrap"
+            className="flex space-x-6"
           >
             {[...clientReviews, ...clientReviews].map((client, index) => (
               <motion.div
                 key={index}
-                className="bg-white shadow-lg rounded-lg p-6 flex-shrink-0 w-80 cursor-pointer hover:bg-gray-50 transform hover:scale-105 transition-transform duration-300"
-                whileHover={{ scale: 1.05 }}
+                className="bg-white shadow-lg rounded-lg p-6 flex-shrink-0 w-80 cursor-pointer hover:bg-indigo-200 hover:rounded-2xl duration-500"
+                whileHover={{ scale: 1 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <h3 className="text-xl font-semibold mb-2">{client.name}</h3>
                 <p className="text-gray-500 mb-4">{client.role}</p>
-                <p className="text-gray-700 mb-4 line-clamp-1">{client.review}</p>
+                <p className="text-gray-700 mb-4">{client.review}</p>
                 <div className="flex items-center">
                   {[...Array(getRandomRating())].map((_, i) => (
                     <FaStar key={i} className="text-yellow-500" />
