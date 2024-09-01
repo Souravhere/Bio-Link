@@ -17,10 +17,15 @@ import Textscroll from './Components/Animation/Textscroll';
 function App() {
   return (
   <>
-  <div  className='w-full absolute sm:block bottom-[10%] -rotate-6'>
+  <div className='w-full overflow-x-hidden'>
+  <div  className='w-[120%] px-0 -ml-8 absolute bg-indigo-500 sm:block sm:bottom-[15%] bottom-[15%] -rotate-6'>
     <Textscroll/>
   </div>
-  {/* <div  className='w-full sm:absolute sm:block sm:bottom-[10%] hidden sm:rotate-6'>
+  <div  className='w-[120%] px-0 -ml-8 absolute bg-indigo-500 sm:block sm:bottom-[1%] bottom-[5%] -rotate-6'>
+    <Textscroll/>
+  </div>
+  </div>
+  {/* <div className='w-full absolute bottom-[20%] sm:hidden block'>
     <Textscroll/>
   </div> */}
   <NavComp/>

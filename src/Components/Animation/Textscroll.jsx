@@ -40,7 +40,7 @@ const Textscroll = () => {
   }, [scrollSpeed]);
 
   return (
-    <div className="overflow-hidden px-0 w-full py-4 text-white text-xl uppercase font-semibold bg-indigo-500">
+    <div className="overflow-hidden px-0 w-[120%] py-4 text-white text-xl uppercase font-semibold">
       <div
         ref={scrollContainerRef}
         className="flex space-x-8 whitespace-nowrap"
