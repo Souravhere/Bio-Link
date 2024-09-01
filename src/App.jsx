@@ -17,7 +17,12 @@ import Textscroll from './Components/Animation/Textscroll';
 function App() {
   return (
   <>
-  <Textscroll/>
+  <div  className='w-full absolute sm:block bottom-[10%] -rotate-6'>
+    <Textscroll/>
+  </div>
+  {/* <div  className='w-full sm:absolute sm:block sm:bottom-[10%] hidden sm:rotate-6'>
+    <Textscroll/>
+  </div> */}
   <NavComp/>
   <Herosection/>
   <Pagelink/>

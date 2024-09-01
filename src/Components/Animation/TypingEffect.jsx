@@ -11,7 +11,7 @@ const Example = () => {
 
 const BubbleText = () => {
   return (
-    <h2 className="py-1 text-center sm:text-5xl sm:font-thin font-semibold text-4xl text-black cursor-pointer">
+    <h2 className="text-center sm:text-5xl sm:font-bold py-2 font-semibold text-4xl text-black cursor-pointer">
       {"Your Vision with Bytte".split("").map((child, idx) => (
         <span className={styles.hoverText} key={idx}>
           {child}
