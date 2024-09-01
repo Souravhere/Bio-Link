@@ -45,14 +45,14 @@ const Pojectcard = () => {
             <div className='flex items-center justify-center sm:gap-4 gap-5 mt-5'>
             <div className='w-1/2 h-36 dark:bg-gray-800 bg-indigo-500 text-white p-2 rounded-lg hover:rounded-2xl duration-500'>
                 <div className='flex items-center'>
-                  <Counter value={10}/>
+                  <Counter value={7}/>
                   <h1 className='font-bold text-5xl'>+</h1>
                 </div>
                 <h3 className='font-bold text-3xl mt-5'>Socials</h3>
               </div>
               <div className='w-1/2 h-36 dark:bg-gray-800 bg-indigo-500 text-white p-2 rounded-lg hover:rounded-2xl duration-500'>
                 <div className='flex items-center'>
-                  <Counter value={10}/>
+                  <Counter value={9}/>
                   <h1 className='font-bold text-5xl'>+</h1>
                 </div>
                 <h3 className='font-bold text-3xl mt-5'>Clients</h3>

@@ -52,43 +52,19 @@ const TeamSection = () => {
             className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
             variants={cardVariants}
           >
-            <a href="#">
               <img
-                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-                alt="Bonnie Avatar"
+                className="sm:w-56 sm:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="/team-1.jpg"
+                alt="Vansh Chaturvedi"
               />
-            </a>
-            <div className="p-5">
+            <div className="p-3 py-2">
               <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="#">Bonnie Green</a>
+                <a href="#">Vansh Chaturvedi</a>
               </h3>
-              <span className="text-gray-500 dark:text-gray-400">CEO & Web Developer</span>
+              <span className="text-gray-500 dark:text-gray-400">Founder / Management</span>
               <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                 Bonnie drives the technical strategy of the flowbite platform and brand.
               </p>
-              <ul className="flex space-x-4 sm:mt-0">
-                <li>
-                  <a href="#" className="text-gray-500 hover:text-pink-600 dark:hover:text-pink-500">
-                    <FaInstagram className="w-6 h-6 transition-transform transform hover:scale-110" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
-                    <FaTwitter className="w-6 h-6 transition-transform transform hover:scale-110" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-500">
-                    <FaFacebook className="w-6 h-6 transition-transform transform hover:scale-110" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-500">
-                    <FaGithub className="w-6 h-6 transition-transform transform hover:scale-110" />
-                  </a>
-                </li>
-              </ul>
             </div>
           </motion.div>
 
@@ -97,43 +73,19 @@ const TeamSection = () => {
             className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
             variants={cardVariants}
           >
-            <a href="#">
               <img
-                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                alt="Jese Avatar"
+                className="sm:w-56 sm:h-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="/team-2.jpg"
+                alt="Vansh Chaturvedi"
               />
-            </a>
-            <div className="p-5">
+            <div className="p-3 py-2">
               <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="#">Jese Leos</a>
+                <a href="#">Vansh Chaturvedi</a>
               </h3>
-              <span className="text-gray-500 dark:text-gray-400">CTO</span>
+              <span className="text-gray-500 dark:text-gray-400">Founder / Management</span>
               <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Jese drives the technical strategy of the flowbite platform and brand.
+                Bonnie drives the technical strategy of the flowbite platform and brand.
               </p>
-              <ul className="flex space-x-4 sm:mt-0">
-                <li>
-                  <a href="#" className="text-gray-500 hover:text-pink-600 dark:hover:text-pink-500">
-                    <FaInstagram className="w-6 h-6 transition-transform transform hover:scale-110" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
-                    <FaTwitter className="w-6 h-6 transition-transform transform hover:scale-110" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-500">
-                    <FaFacebook className="w-6 h-6 transition-transform transform hover:scale-110" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-500">
-                    <FaGithub className="w-6 h-6 transition-transform transform hover:scale-110" />
-                  </a>
-                </li>
-              </ul>
             </div>
           </motion.div>
         </motion.div>
