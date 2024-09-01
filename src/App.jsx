@@ -12,11 +12,12 @@ import Faq from './Components/Faq';
 import TeamSection from './Components/TeamSection';
 import Footer from './Components/Footer';
 import TestimonialsSection from './TestimonialsSection';
+import Textscroll from './Components/Animation/Textscroll';
 
 function App() {
   return (
   <>
-  {/* <Textscroll/> */}
+  <Textscroll/>
   <NavComp/>
   <Herosection/>
   <Pagelink/>
