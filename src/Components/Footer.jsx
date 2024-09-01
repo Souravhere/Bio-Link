@@ -13,16 +13,17 @@ function Footer() {
               <a href="/" className="flex items-center">
                   <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Byyte</span>
               </a>
+              <p className='sm:w-1/3 w-full text-sm text-gray-500 mt-2'>At Byyte.co, we craft visually stunning websites, captivating designs, and data-driven marketing strategies to elevate your brand.</p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://flowbite.com/" className="hover:underline">About Us</a>
+                          <a href="https://flowbite.com/" className="hover:text-indigo-500">About Us</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:underline">Services</a>
+                          <a href="https://tailwindcss.com/" className="hover:text-indigo-500">Services</a>
                       </li>
                   </ul>
               </div>
@@ -30,10 +31,10 @@ function Footer() {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
+                          <a href="https://github.com/themesberg/flowbite" className="hover:text-indigo-500 ">Github</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
+                          <a href="https://discord.gg/4eeurUVvTy" className="hover:text-indigo-500">Discord</a>
                       </li>
                   </ul>
               </div>
@@ -41,10 +42,10 @@ function Footer() {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="#" className="hover:underline">Privacy Policy</a>
+                          <a href="#" className="hover:text-indigo-500">Privacy Policy</a>
                       </li>
                       <li>
-                          <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                          <a href="#" className="hover:text-indigo-500">Terms &amp; Conditions</a>
                       </li>
                   </ul>
               </div>
@@ -52,7 +53,7 @@ function Footer() {
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" className="hover:underline">Byyte.co™</a>. All Rights Reserved.
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" className="hover:text-indigo-500">Byyte.co</a>. All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-3">
                 <a href="#" className="text-gray-500 hover:text-pink-600 dark:hover:text-pink-500 ">
