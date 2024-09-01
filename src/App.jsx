@@ -15,6 +15,7 @@ import Textscroll from './Components/Animation/Textscroll';
 import { Pagelink } from './Components/Pagelink';
 import Faq from './Components/Faq';
 import TeamSection from './Components/TeamSection';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
     </div>
     <Faq/>
     <TeamSection/>
+    <Footer />
   </>
   );
 }
