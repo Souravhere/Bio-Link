@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
 import { BsTwitterX } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -20,10 +21,13 @@ function Footer() {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://flowbite.com/" className="hover:text-indigo-500">About Us</a>
+                          <NavLink className="hover:text-indigo-500" to='/'>Home</NavLink>
+                      </li>
+                      <li className="mb-4">
+                          <NavLink className="hover:text-indigo-500" to='aboutus'>About Us</NavLink>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" className="hover:text-indigo-500">Services</a>
+                          <NavLink to='services' className="hover:text-indigo-500">Services</NavLink>
                       </li>
                   </ul>
               </div>
@@ -31,10 +35,10 @@ function Footer() {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" className="hover:text-indigo-500 ">Github</a>
+                          <a href="https://github.com/souravhere" className="hover:text-indigo-500 ">Github</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" className="hover:text-indigo-500">Discord</a>
+                          <a href="/" className="hover:text-indigo-500">Discord <span className='text-[8px] bg-indigo-500 text-white px-1 rounded-lg'>SOON</span></a>
                       </li>
                   </ul>
               </div>
@@ -42,10 +46,10 @@ function Footer() {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="#" className="hover:text-indigo-500">Privacy Policy</a>
+                          <a href="/Privacy-Policy.pdf" target='blank' className="hover:text-indigo-500">Privacy Policy</a>
                       </li>
                       <li>
-                          <a href="#" className="hover:text-indigo-500">Terms &amp; Conditions</a>
+                          <a href="/Terms.pdf" target='blank' className="hover:text-indigo-500">Terms &amp; Conditions</a>
                       </li>
                   </ul>
               </div>
@@ -55,13 +59,13 @@ function Footer() {
       <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" className="hover:text-indigo-500">Byyte.co</a>. All Rights Reserved.
           </span>
-          <div className="flex mt-4 sm:justify-center sm:mt-0 gap-3">
-                <a href="#" className="text-gray-500 hover:text-pink-600 dark:hover:text-pink-500 ">
+          <div className="flex mt-4 sm:justify-center sm:mt-0 gap-5">
+                <a href="https://www.instagram.com/byyte.co/" className="text-gray-500 hover:text-pink-600 dark:hover:text-pink-500 ">
                     <FaInstagram className="w-6 h-6 transition-transform transform hover:scale-110 duration-500" />
                 </a>
-                <a href="#" className="text-gray-500 hover:text-blue-500 dark:hover:text-blue-400">
+                {/* <a href="#" className="text-gray-500 overflow-x-visible relative hover:text-blue-500 dark:hover:text-blue-400">
                     <BsTwitterX className="w-6 h-6 transition-transform transform hover:scale-110 duration-500" />
-                </a>
+                </a> */}
                 <a href="#" className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-500">
                     <FaGithub className="w-6 h-6 transition-transform transform hover:scale-110 duration-500" />
                   </a>
