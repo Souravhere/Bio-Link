@@ -10,7 +10,7 @@ function NavComp() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-      <div className='w-full flex items-center justify-between py-4 px-3 bg-white dark:bg-black dark:text-white'>
+      <div className='w-full flex items-center justify-between py-4 px-3 bg-white'>
         {/* <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' /> */}
         <a href="/">
         <h1 className='font-semibold text-2xl'>Byyte.in</h1>

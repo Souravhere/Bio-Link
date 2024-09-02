@@ -13,23 +13,25 @@ import TeamSection from './Components/TeamSection';
 import Footer from './Components/Footer';
 import TestimonialsSection from './TestimonialsSection';
 import Textscroll from './Components/Animation/Textscroll';
+import { BoxesContainer } from './Components/BoxesContainer';
 
 function App() {
   return (
   <div>
-  <div className='absolute bottom-0 w-full overflow-x-hidden h-[60%] bg-transparent overflow-y-hidden'>
+  {/* <div className='absolute bottom-0 w-full overflow-x-hidden h-[60%] bg-transparent overflow-y-hidden'>
       <div className='absolute w-[120%] bg-indigo-500 sm:block sm:bottom-[25%] bottom-[25%] -rotate-6 inset-x-1/2 transform -translate-x-1/2 z-10'>
         <Textscroll />
       </div>
       <div className='absolute w-[120%] bg-indigo-500 sm:block sm:bottom-[1%] bottom-[5%] -rotate-6 inset-x-1/2 transform -translate-x-1/2 z-10'>
         <Textscroll />
       </div>
-    </div>
+    </div> */}
   {/* <div className='w-full absolute bottom-[20%] sm:hidden block'>
     <Textscroll/>
   </div> */}
   {/* <NavComp/> */}
-  <Herosection/>
+  {/* <Herosection/> */}
+  <BoxesContainer/>
   <Pagelink/>
   {/* <Founder/> */}
     <div className="w-full bg-white text-[#000000] dark:bg-black md:h-96 lg:h-[600px] sm:flex block items-center justify-evenly sm:mt-0">
