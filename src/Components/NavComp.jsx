@@ -11,7 +11,8 @@ function NavComp() {
 
   return (
       <div className='w-full flex items-center justify-between py-4 px-3 bg-white dark:bg-black dark:text-white'>
-        <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' />
+        {/* <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' /> */}
+        <h1 className='font-semibold text-2xl'>Byyte.co</h1>
 
         <div className='md:hidden absolute top-2 right-5'>
           <button onClick={toggleMenu} className='text-2xl'>
@@ -50,13 +51,15 @@ function NavComp() {
                 ✖️
               </button>
               <NavLink onClick={toggleMenu} to='/'>
-                <StaggeredText text="Home" hoverColor="black" baseColor="black" className='font-semibold text-3xl my-2' />
+                <p className='font-semibold text-3xl my-2 text-black'>Home</p>
               </NavLink>
               <NavLink onClick={toggleMenu} to='aboutus'>
-                <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-3xl my-2' />
+                {/* <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-3xl my-2' /> */}
+                <p className='font-semibold text-3xl my-2 text-black'>About Us</p>
               </NavLink>
               <NavLink onClick={toggleMenu} to='services'>
-                <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold  text-3xl my-2' />
+                {/* <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold  text-3xl my-2' /> */}
+                <p className='font-semibold text-3xl my-2 text-black'>Services</p>
               </NavLink>
             </motion.div>
           )}
