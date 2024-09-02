@@ -12,27 +12,15 @@ import ContactUs from './ContactUs.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout/>,
+    element: <Layout />,
     children: [
-      {
-        path:'',
-        element:<App/>
-      },
-      {
-        path:'Services',
-        element:<Servieces/>
-      },
-      {
-        path:'aboutus',
-        element:<Aboutus/>
-      },
-      {
-        path:'Contactus',
-        element:<ContactUs/>
-      }
+      { path: '', element: <App /> },
+      { path: 'services', element: <Servieces /> },
+      { path: 'aboutus', element: <Aboutus /> },
+      { path: 'contactus', element: <ContactUs /> }
     ]
   }
-])
+]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
