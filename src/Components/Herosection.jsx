@@ -68,16 +68,16 @@ export default function Herosection() {
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
               
-                <NavLink>
+                <NavLink to='Contactus'>
                 <motion.div
-                  className='font-semibold bg-indigo-500 p-4 sm:my-0 my-3'
+                  className='sm:hidden font-semibold bg-indigo-500 p-4 sm:my-0 my-3'
                   whileHover={{ scale: 1.05, backgroundColor: "#4b5d69" }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
                 >
                   <StaggeredText text="Contact Us" hoverColor="white" baseColor="white" className='font-semibold text-base'/>
                 </motion.div>
                 </NavLink>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="/Byyte-Project-Workflow.pdf" target='blank' className="text-sm font-semibold leading-6 text-gray-900">
                 <motion.div
                   className='font-semibold bg-white p-4'
                   whileHover={{ scale: 1.05, backgroundColor: "#f1f1f1" }}
