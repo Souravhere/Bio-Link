@@ -40,7 +40,7 @@ const ContactUs = () => {
         
         <a
           href="mailto:Byyteco@gmail.com?subject=Inquiry&body=Hello, I have an inquiry regarding your services."
-          className="inline-block bg-indigo-500 text-white px-4 py-2 rounded-lg mt-4"
+          className="inline-block w-full text-center bg-indigo-500 text-white px-4 py-2 rounded-lg mt-4"
         >
           Email Us
         </a>
@@ -93,7 +93,7 @@ const ContactUs = () => {
       >
         <a
           href="tel:+917426968980"
-          className="inline-block bg-indigo-500 text-white px-4 py-2 rounded-lg"
+          className="inline-block sm:hidden w-full bg-indigo-500 text-white px-4 py-2 rounded-lg"
         >
           Call Us
         </a>
