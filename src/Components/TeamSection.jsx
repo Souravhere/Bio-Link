@@ -61,7 +61,7 @@ const TeamSection = () => {
               <h3 className="text-xl font-bold tracking-tight  dark:text-white">
                 <a href="#">Vansh Chaturvedi</a>
               </h3>
-              <span className=" dark:text-gray-400">Founder / Management</span>
+              <span className=" dark:text-gray-400">Founder</span>
               <p className="mt-3 mb-4 font-light  dark:text-gray-400">
               At Byyte, we are committed to building digital experiences that drive growth and innovation.
               </p>
@@ -82,14 +82,13 @@ const TeamSection = () => {
               <h3 className="text-xl font-bold tracking-tight  dark:text-white">
                 <a href="#">Sourav Chhimpa</a>
               </h3>
-              <span className=" dark:text-gray-400">Co Founder / UIX</span>
+              <span className=" dark:text-gray-400">Co Founder</span>
               <p className="mt-3 mb-4 font-light  dark:text-gray-400">
               Crafting intuitive designs that inspire and connect is at the heart of everything we do at Byyte.
               </p>
             </div>
           </motion.div>
-          {/* team 3 */}
-          {/* <motion.div
+          <motion.div
             className="items-center bg-indigo-500 text-white rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 p-2"
             variants={cardVariants}
           >
@@ -104,7 +103,7 @@ const TeamSection = () => {
               </h3>
               <span className=" dark:text-gray-400">Community Manager</span>
               <p className="mt-3 mb-4 font-light  dark:text-gray-400">
-                Bonnie drives the technical strategy of the flowbite platform and brand.
+              Building meaningful connections with your audience is at the heart of our community management.
               </p>
             </div>
           </motion.div>
@@ -123,10 +122,10 @@ const TeamSection = () => {
               </h3>
               <span className=" dark:text-gray-400">Influencer Marketing Coordinator</span>
               <p className="mt-3 mb-4 font-light  dark:text-gray-400">
-                Bonnie drives the technical strategy of the flowbite platform and brand.
+              Collaborating with influencers to amplify your brand's voice is what we do best!
               </p>
             </div>
-          </motion.div> */}
+          </motion.div>
         </motion.div>
       </div>
     </section>
