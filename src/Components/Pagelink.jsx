@@ -6,33 +6,34 @@ export const Pagelink = () => {
   return (
     <section className="bg-white text-black p-4 md:p-8 w-full">
         <h1 className="text-2xl font-semibold">Our Service</h1>
-      <div className="mx-auto w-full">
-        <AnimatedDiv
-          heading="Website"
-          subheading="Learn what we do here"
-          imgSrc="https://i.pinimg.com/564x/a4/df/19/a4df19998a10efd7d2fd8739093c1420.jpg"
-        />
-        <AnimatedDiv
-          heading="Graphics"
-          subheading="We work with great people"
-          imgSrc="https://i.pinimg.com/564x/5d/28/90/5d289055564c7f5b0ff3d55d438f1a24.jpg"
-        />
-        <AnimatedDiv
-          heading="Marketing"
-          subheading="Our work speaks for itself"
-          imgSrc="https://i.pinimg.com/564x/c2/e7/51/c2e7515b7ac38c964a3fae81487e295f.jpg"
-        />
-        <AnimatedDiv
-          heading="Social"
-          subheading="We want cool people"
-          imgSrc="https://i.pinimg.com/564x/4f/24/a5/4f24a5ecaf4665f3300723b5713ad03c.jpg"
-        />
-        <AnimatedDiv
-          heading="More"
-          subheading="In case you're bored"
-          imgSrc="https://i.pinimg.com/564x/b6/34/e4/b634e42271294b86d99d2982899f1898.jpg"
-        />
-      </div>
+        <div className="mx-auto w-full">
+  <AnimatedDiv
+    heading="Website"
+    subheading="Discover our web solutions"
+    imgSrc="https://i.pinimg.com/564x/a4/df/19/a4df19998a10efd7d2fd8739093c1420.jpg"
+  />
+  <AnimatedDiv
+    heading="Graphics"
+    subheading="Designs that stand out"
+    imgSrc="https://i.pinimg.com/564x/5d/28/90/5d289055564c7f5b0ff3d55d438f1a24.jpg"
+  />
+  <AnimatedDiv
+    heading="Marketing"
+    subheading="Elevate your brand"
+    imgSrc="https://i.pinimg.com/564x/c2/e7/51/c2e7515b7ac38c964a3fae81487e295f.jpg"
+  />
+  <AnimatedDiv
+    heading="Management"
+    subheading="Efficient & effective"
+    imgSrc="https://i.pinimg.com/564x/4f/24/a5/4f24a5ecaf4665f3300723b5713ad03c.jpg"
+  />
+  <AnimatedDiv
+    heading="More"
+    subheading="Explore our extras"
+    imgSrc="https://i.pinimg.com/564x/b6/34/e4/b634e42271294b86d99d2982899f1898.jpg"
+  />
+</div>
+
     </section>
   );
 };
