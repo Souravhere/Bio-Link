@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./bubble.module.css";
 
-const Example = () => {
+const HeroSection = () => {
   return (
-    <div className="place-content-center">
+    <div className="hero-container flex justify-center items-center h-screen">
       <BubbleText />
     </div>
   );
@@ -11,14 +10,14 @@ const Example = () => {
 
 const BubbleText = () => {
   return (
-    <h2 className="text-center sm:text-5xl sm:font-bold py-2 font-semibold text-4xl text-black cursor-pointer">
-      {"Your Vision with Bytte".split("").map((child, idx) => (
-        <span className={styles.hoverText} key={idx}>
-          {child}
+    <h2 className="text-center sm:text-5xl sm:font-bold py-2 font-semibold text-4xl text-black">
+      {"Your Vision with Bytte".split("").map((char, idx) => (
+        <span className="bubble-text" key={idx}>
+          {char}
         </span>
       ))}
     </h2>
   );
 };
 
-export default Example;
+export default HeroSection;
