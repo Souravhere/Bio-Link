@@ -12,7 +12,9 @@ function NavComp() {
   return (
       <div className='w-full flex items-center justify-between py-4 px-3 bg-white dark:bg-black dark:text-white'>
         {/* <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' /> */}
-        <h1 className='font-semibold text-2xl'>Byyte.co</h1>
+        <a href="/">
+        <h1 className='font-semibold text-2xl'>Byyte.in</h1>
+        </a>
 
         <div className='md:hidden absolute top-2 right-5'>
           <button onClick={toggleMenu} className='text-2xl'>
