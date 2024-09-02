@@ -36,7 +36,7 @@ const TeamSection = () => {
             Our Team
           </h2>
           <p className="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-            Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind
+          Meet the creative minds and technical experts behind Byyte, dedicated to delivering innovative solutions and exceptional results for your business. Together, we turn ideas into reality.
           </p>
         </motion.div>
 
@@ -54,7 +54,7 @@ const TeamSection = () => {
           >
               <img
                 className="sm:w-56 sm:h-full rounded-lg"
-                src="/team-3.jpg"
+                src="/team-6.jpg"
                 alt="Vansh Chaturvedi"
               />
             <div className="p-3 py-2">
@@ -63,7 +63,7 @@ const TeamSection = () => {
               </h3>
               <span className=" dark:text-gray-400">Founder / Management</span>
               <p className="mt-3 mb-4 font-light  dark:text-gray-400">
-                Bonnie drives the technical strategy of the flowbite platform and brand.
+              At Byyte, we are committed to building digital experiences that drive growth and innovation.
               </p>
             </div>
           </motion.div>
@@ -84,12 +84,12 @@ const TeamSection = () => {
               </h3>
               <span className=" dark:text-gray-400">Co Founder / UIX</span>
               <p className="mt-3 mb-4 font-light  dark:text-gray-400">
-                Bonnie drives the technical strategy of the flowbite platform and brand.
+              Crafting intuitive designs that inspire and connect is at the heart of everything we do at Byyte.
               </p>
             </div>
           </motion.div>
           {/* team 3 */}
-          <motion.div
+          {/* <motion.div
             className="items-center bg-indigo-500 text-white rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 p-2"
             variants={cardVariants}
           >
@@ -108,7 +108,6 @@ const TeamSection = () => {
               </p>
             </div>
           </motion.div>
-          {/* team 4 */}
           <motion.div
             className="items-center bg-indigo-500 text-white rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 p-2"
             variants={cardVariants}
@@ -127,7 +126,7 @@ const TeamSection = () => {
                 Bonnie drives the technical strategy of the flowbite platform and brand.
               </p>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
