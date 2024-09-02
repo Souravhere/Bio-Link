@@ -7,6 +7,7 @@ import { createBox } from 'framer-motion'
 import Layout from './Layout.jsx'
 import Servieces from './Servieces.jsx'
 import Aboutus from './Aboutus.jsx'
+import ContactUs from './ContactUs.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path:'aboutus',
         element:<Aboutus/>
+      },
+      {
+        path:'Contactus',
+        element:<ContactUs/>
       }
     ]
   }

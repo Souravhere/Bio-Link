@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import StaggeredText from './Animation/StaggeredText';
+import { NavLink } from 'react-router-dom';
 
 const typingEffect = {
   hidden: {
@@ -66,7 +67,8 @@ export default function Herosection() {
               variants={fadeIn}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
             >
-              <a href="#">
+              
+                <NavLink>
                 <motion.div
                   className='font-semibold bg-indigo-500 p-4 sm:my-0 my-3'
                   whileHover={{ scale: 1.05, backgroundColor: "#4b5d69" }}
@@ -74,7 +76,7 @@ export default function Herosection() {
                 >
                   <StaggeredText text="Contact Us" hoverColor="white" baseColor="white" className='font-semibold text-base'/>
                 </motion.div>
-              </a>
+                </NavLink>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                 <motion.div
                   className='font-semibold bg-white p-4'

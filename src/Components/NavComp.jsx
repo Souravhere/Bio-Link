@@ -32,11 +32,9 @@ function NavComp() {
           </NavLink>
         </div>
         
-        <a href="">
-          <div className='sm:block hidden font-semibold bg-indigo-500 py-2 px-2 rounded-lg'>
+          <NavLink to='Contactus' className='sm:block hidden font-semibold bg-indigo-500 py-2 px-2 rounded-lg'>
             <StaggeredText text="Contact Us" hoverColor="white" baseColor="white" className='font-semibold text-base' />
-          </div>
-        </a>
+          </NavLink>
 
         <AnimatePresence>
           {isOpen && (
