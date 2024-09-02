@@ -59,6 +59,10 @@ function NavComp() {
                 {/* <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold  text-3xl my-2' /> */}
                 <p className='font-semibold text-3xl my-2 text-black'>Services</p>
               </NavLink>
+              <NavLink onClick={toggleMenu} to='Contactus'>
+                {/* <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold  text-3xl my-2' /> */}
+                <p className='font-semibold text-3xl my-2 text-black'>Contact Us</p>
+              </NavLink>
             </motion.div>
           )}
         </AnimatePresence>
