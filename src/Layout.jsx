@@ -13,7 +13,7 @@ const Counter = () => {
     let start = 0;
     const end = 100;
     const step = 4;
-    const duration = 2000; // Duration of animation in ms
+    const duration = 2000; 
     const interval = duration / ((end - start) / step);
 
     const timer = setInterval(() => {
@@ -31,12 +31,12 @@ const Counter = () => {
 
   return (
     <motion.div
-      className="absolute bottom-3 right-3 text-black"
+      className="absolute bottom-3 right-3"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <span className="text-7xl font-bold">{count}</span>
+      <span className="text-7xl font-bold text-indigo-500">{count+`%`}</span>
     </motion.div>
   );
 };
