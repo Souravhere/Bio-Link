@@ -4,29 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://raw.githubusercontent.com/Souravhere/DigitalAgency/main/sourcimg/hdlogo.png" type="image/x-icon">
-    <title>Byyte - Website Development, Graphics Design & Social Media Management</title>
+    <link rel="canonical" href="https://www.byyte.in/" />
+
+    <title>Byyte - Website Development, Graphics Design & Digital Growth</title>
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Byyte - Website Development, Graphics Design & Social Media Management">
-    <meta name="description" content="Byyte provides services like website development, graphics design, social media management, marketing, and more to help businesses grow digitally.">
-    <meta name="keywords" content="website development, graphics design, social media management, digital marketing, web design, branding, marketing strategy">
+    <meta name="title" content="Byyte - Website Development, Graphics Design & Digital Growth">
+    <meta name="description" content="Byyte offers expert services in website development, graphics design, social media management, and digital marketing to help businesses thrive online.">
+    <meta name="keywords" content="website development, graphics design, social media management, digital marketing, branding, SEO, web design">
     <meta name="author" content="Byyte.in">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.byyte.in/">
-    <meta property="og:title" content="Byyte - Website Development, Graphics Design & Social Media Management">
-    <meta property="og:description" content="Byyte provides services like website development, graphics design, social media management, and more to help businesses grow digitally.">
+    <meta property="og:title" content="Byyte - Website Development, Graphics Design & Digital Growth">
+    <meta property="og:description" content="Byyte offers expert services in website development, graphics design, social media management, and digital marketing to help businesses thrive online.">
     <meta property="og:image" content="https://raw.githubusercontent.com/Souravhere/Bio-Link/main/public/meta-img.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.byyte.in/">
-    <meta property="twitter:title" content="Byyte - Website Development, Graphics Design & Social Media Management">
-    <meta property="twitter:description" content="Byyte provides services like website development, graphics design, social media management, marketing, and more to help businesses grow digitally.">
+    <meta property="twitter:title" content="Byyte - Website Development, Graphics Design & Digital Growth">
+    <meta property="twitter:description" content="Byyte provides website development, graphics design, and social media management services for business growth.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/Souravhere/Bio-Link/main/public/meta-img.jpg">
 
-    <!-- Schema.org Structured Data -->
+    <!-- Organization JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -35,15 +37,49 @@
       "url": "https://www.byyte.in",
       "logo": "https://raw.githubusercontent.com/Souravhere/DigitalAgency/main/sourcimg/hdlogo.png",
       "description": "Byyte provides services like website development, graphics design, social media management, marketing, and more.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-7426968980",
-        "contactType": "Customer Service",
-        "areaServed": "IN",
-        "availableLanguage": "English"
-      },
       "sameAs": [
-        "https://www.instagram.com/byyte.co"
+        "https://www.instagram.com/byyte.co",
+        "https://www.linkedin.com/company/byyte-co"
+      ]
+    }
+    </script>
+
+    <!-- Services JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    { "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Byyte",
+    "url": "https://www.byyte.in",
+    "logo": "https://raw.githubusercontent.com/Souravhere/DigitalAgency/main/sourcimg/hdlogo.png",
+    "description": "Byyte provides services like website development, graphics design, social media management, marketing, and more.",
+    "sameAs": [
+      "https://www.instagram.com/byyte.co",
+    ],
+      "service": [
+        {
+          "@type": "Service",
+          "name": "Website Development",
+          "description": "Custom website development with responsive design.",
+          "url": "https://www.byyte.in/Services"
+        },
+        {
+          "@type": "Service",
+          "name": "Graphics Design",
+          "description": "Professional graphic design services for branding and marketing.",
+          "url": "https://www.byyte.in/Services"
+        },
+        {
+          "@type": "Service",
+          "name": "Social Media Management",
+          "description": "Comprehensive social media management for platforms like Instagram, LinkedIn, and more.",
+          "url": "https://www.byyte.in/Services"
+        },
+        {
+          "@type": "Service",
+          "name": "Marketing",
+          "description": "Digital marketing services to grow your business online.",
+          "url": "https://www.byyte.in/Services"
+        }
       ]
     }
     </script>
@@ -52,7 +88,8 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#000000">
 
-    <!-- Preload Important Resources -->
+    <!-- Preload Key Resources for Better Performance -->
+    <link rel="preload" href="/fonts/your-font.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Dark Mode Script -->
     <script>
@@ -62,6 +99,7 @@
         document.documentElement.classList.remove('dark');
       }
     </script>
+    <meta name="google-site-verification" content="l6QD_O6WePwXlRREUfv5MSHPf7VvwBNuR6NBEC0ZC1w" />
   </head>
   <body>
     <div id="root" class="w-full overflow-x-hidden"></div>
