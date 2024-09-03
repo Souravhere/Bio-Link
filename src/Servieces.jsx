@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
 
 const servicesData = [
   {
@@ -152,12 +153,12 @@ function Services() {
         transition={{ delay: 0.5, duration: 1 }}
       >
         <h3 className="text-4xl font-bold mb-4">Ready to take your business to the next level?</h3>
-        <p className="text-lg leading-relaxed mb-8">
+        <p className="text-lg leading-relaxed mb-8 p-3">
           Contact us today to learn how Byyte can help you achieve your digital goals. Whether you’re looking to revamp your website, launch a new marketing campaign, or boost your social media presence, we have the expertise to make it happen.
         </p>
-        <a href="/contact" className="bg-white text-indigo-600 font-bold py-3 px-8 rounded-lg hover:bg-indigo-100 transition duration-300">
+        <NavLink to='/contactus' className="bg-white text-indigo-600 font-bold py-3 px-8 rounded-lg hover:bg-indigo-100 transition duration-300">
           Get in Touch
-        </a>
+        </NavLink>
       </motion.div>
     </div>
   );
