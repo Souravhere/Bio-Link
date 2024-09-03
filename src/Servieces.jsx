@@ -7,37 +7,37 @@ const servicesData = [
     title: 'Website Development',
     description:
       'We create visually stunning and highly functional websites that are responsive, user-friendly, and optimized for performance.',
-    imageUrl: 'https://i.pinimg.com/564x/38/af/53/38af53e57ea441e8754f842149bbfc72.jpg',
+    imageUrl: 'https://i.pinimg.com/564x/f6/d2/cb/f6d2cb96142b3ff64c884ebe4aec25e9.jpg',
   },
   {
     title: 'Graphic Design',
     description:
       'Our team designs captivating visuals, from logos to marketing materials, ensuring your brand stands out in the crowd.',
-    imageUrl: 'https://i.pinimg.com/564x/38/af/53/38af53e57ea441e8754f842149bbfc72.jpg',
+    imageUrl: 'https://i.pinimg.com/736x/60/33/19/603319383607381eff8090df4e36bcdb.jpg',
   },
   {
     title: 'Social Media Management',
     description:
       'We manage your social media presence with regular content creation, posting, and audience engagement on platforms like Instagram, LinkedIn, and X.',
-    imageUrl: 'https://i.pinimg.com/564x/38/af/53/38af53e57ea441e8754f842149bbfc72.jpg',
+    imageUrl: 'https://cdn.dribbble.com/userupload/16057121/file/original-b87de23f54fb4cfd707d5ba422df317b.png?resize=1504x1128&vertical=center',
   },
   {
     title: 'Digital Marketing',
     description:
       'We provide tailored marketing strategies that drive traffic, engagement, and conversions, helping your business grow online.',
-    imageUrl: 'https://i.pinimg.com/564x/38/af/53/38af53e57ea441e8754f842149bbfc72.jpg',
+    imageUrl: 'https://i.pinimg.com/564x/5d/ea/57/5dea576b8dadb006187b16e0ea7e9dbb.jpg',
   },
   {
     title: 'Content Creation',
     description:
       'From blog posts to social media updates, we create content that resonates with your audience and enhances your brand’s presence.',
-    imageUrl: 'https://i.pinimg.com/564x/38/af/53/38af53e57ea441e8754f842149bbfc72.jpg',
+    imageUrl: 'https://cdn.dribbble.com/userupload/7445756/file/original-8879dcc8a6999567560d368cb335a354.png?resize=1504x1128',
   },
   {
     title: 'SEO & Analytics',
     description:
       'We optimize your website for search engines and provide data-driven insights to improve your digital strategies.',
-    imageUrl: 'https://i.pinimg.com/564x/38/af/53/38af53e57ea441e8754f842149bbfc72.jpg',
+    imageUrl: 'https://i.pinimg.com/736x/e3/f2/35/e3f235a4e77163c79121741a7634587d.jpg',
   },
 ];
 
