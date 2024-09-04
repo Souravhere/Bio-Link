@@ -11,28 +11,28 @@ const cardVariants = {
 const OurTeam = () => {
   return (
     <div className="flex flex-col items-center justify-center py-10 bg-white">
-      <h2 className="text-2xl font-bold mb-6">We offer the best experience</h2>
+      <h2 className="text-2xl font-bold mb-6">Our Expert Team at Byyte</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl w-full py-5">
         {[
           {
             title: 'Website Development',
             icon: <FaCode size={30} />,
-            description: 'Building responsive and performant websites for your business.',
+            description: 'Building high-performance, responsive websites tailored to your business needs.',
           },
           {
-            title: 'Graphics Designing',
+            title: 'Graphic Design',
             icon: <FaPaintBrush size={30} />,
-            description: 'Creative designs that represent your brand’s identity.',
+            description: 'Crafting compelling designs that capture the essence of your brand.',
           },
           {
-            title: 'Social Management',
+            title: 'Social Media Management',
             icon: <FaUsers size={30} />,
-            description: 'Managing your social media presence to engage with your audience.',
+            description: 'Maximizing your online presence with targeted strategies and content management.',
           },
           {
-            title: 'Marketing',
+            title: 'Marketing & SEO',
             icon: <FaBullhorn size={30} />,
-            description: 'Strategies to boost your brand and reach your target audience.',
+            description: 'Boosting your brand’s visibility through impactful marketing campaigns and SEO optimization.',
           },
         ].map((card, index) => (
           <motion.div
