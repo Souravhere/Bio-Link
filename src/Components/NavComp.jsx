@@ -13,7 +13,7 @@ function NavComp() {
       <div className='w-full flex items-center justify-between py-4 px-3 bg-white'>
         {/* <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' /> */}
         <a href="/">
-        <h1 className='font-semibold text-2xl'>Byyte.in</h1>
+        <h1 className='font-semibold text-[29px]'>Byyte.in</h1>
         </a>
 
         <div className='md:hidden absolute top-2 right-5'>
@@ -24,18 +24,18 @@ function NavComp() {
 
         <div className='hidden md:flex gap-5'>
           <NavLink to='/'>
-            <StaggeredText text="Home" hoverColor="gray" baseColor="black" className='font-semibold text-lg' />
+            <StaggeredText text="Home" hoverColor="gray" baseColor="black" className='font-semibold text-[23px]' />
           </NavLink>
           <NavLink to='aboutus'>
-            <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-lg' />
+            <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-[23px]' />
           </NavLink>
           <NavLink to='Services'>
-            <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-lg' />
+            <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-[23px]' />
           </NavLink>
         </div>
         
           <NavLink to='Contactus' className='sm:block hidden font-semibold bg-indigo-500 py-2 px-2 rounded-lg'>
-            <StaggeredText text="Contact Us" hoverColor="white" baseColor="white" className='font-semibold text-base' />
+            <StaggeredText text="Contact Us" hoverColor="white" baseColor="white" className='font-semibold text-lg' />
           </NavLink>
 
         <AnimatePresence>

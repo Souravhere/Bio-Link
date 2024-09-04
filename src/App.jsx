@@ -15,7 +15,7 @@ import TestimonialsSection from './TestimonialsSection';
 import Textscroll from './Components/Animation/Textscroll';
 import { BoxesContainer } from './Components/BoxesContainer';
 import OurTeam from './Components/OurTeam';
-
+import Ourporjects from './Components/Ourporjects';
 function App() {
   return (
   <div>
@@ -37,8 +37,8 @@ function App() {
   {/* <Pagelink/> */}
   {/* <Founder/> */}
     <div className="w-full bg-white text-[#000000] dark:bg-black md:h-96 lg:h-[600px] sm:flex block items-center justify-evenly sm:mt-0">
-      <div className='sm:w-1/2 w-full md:h-96 lg:h-[600px] h-[600px] sm:-ml-[0%] ml-0'>
-      <Canvas flat camera={{fov: 40, position: [0, 0, 5] }} resize={{ scroll: true, debounce: { scroll: 50, resize: 0 } }}>
+      <div className='sm:w-1/2 w-full md:h-96 lg:h-[600px] h-[600px] sm:-ml-[0%] ml-0 flex items-center justify-center'>
+      {/* <Canvas flat camera={{fov: 40, position: [0, 0, 5] }} resize={{ scroll: true, debounce: { scroll: 50, resize: 0 } }}>
         <ambientLight />
         <OrbitControls enablePan={false} enableZoom={false} />
         <Scene />
@@ -50,7 +50,8 @@ function App() {
             luminanceSmoothing={2}
           />
         </EffectComposer>
-      </Canvas>
+      </Canvas> */}
+      <Ourporjects/>
       </div>
       <div className='sm:w-1/2 w-full relative sm:mt-0 -mt-20'>
         {/* <h1 className='text-black dark:text-white text-3xl font-semibold text-center my-3'>Projects</h1> */}
