@@ -100,7 +100,7 @@ function OurProjects() {
         whileHover="hover"
       >
         <div className="flex items-center justify-evenly">
-          <img className="h-12" src="https://img.icons8.com/3d-fluency/750/design.png" alt="Designs" />
+          <img className="h-12" src="https://img.icons8.com/3d-fluency/400/design.png" alt="Designs" />
           <h2 className="font-semibold">Designs</h2>
         </div>
       </motion.div>
@@ -111,7 +111,7 @@ function OurProjects() {
         whileHover="hover"
       >
         <div className="flex items-center justify-evenly">
-          <img className="h-12" src="https://img.icons8.com/3d-fluency/750/chart.png" alt="Marketing" />
+          <img className="h-12" src="https://img.icons8.com/3d-fluency/400/chart.png" alt="Marketing" />
           <h2 className="font-semibold">Marketing</h2>
         </div>
       </motion.div>
@@ -122,7 +122,7 @@ function OurProjects() {
         whileHover="hover"
       >
         <div className="flex items-center justify-evenly">
-          <img className="h-12" src="https://img.icons8.com/color/750/bullish.png" alt="SEO" />
+          <img className="h-12" src="https://img.icons8.com/color/400/bullish.png" alt="SEO" />
           <h2 className="font-semibold">SEO</h2>
         </div>
       </motion.div>
