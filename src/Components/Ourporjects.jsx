@@ -21,16 +21,30 @@ function OurProjects() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
-        staggerChildren: 0.2,
-        ease: 'easeOut',
+        duration: 1,
+        staggerChildren: 0.25,
+        ease: 'easeInOut',
       },
     },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.8,
+        ease: 'easeInOut',
+      },
+    },
+    hover: {
+      scale: 1.1,
+      transition: {
+        duration: 0.4,
+        ease: 'easeOut',
+      },
+    },
   };
 
   return (
@@ -51,7 +65,7 @@ function OurProjects() {
         xmlns="http://www.w3.org/2000/svg"
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 2, ease: 'easeInOut' }}
       >
         <motion.path
           d="M163 415.5L1 507V136.5L225 1L437.5 123.5V272.5L316.5 343L437.5 415.5V583.5L225 688L80.5 601L274 483V220.5L163 156V415.5Z"
@@ -64,7 +78,7 @@ function OurProjects() {
           fill="#5C00BE"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 1 }}
+          transition={{ delay: 2, duration: 1, ease: 'easeInOut' }}
         />
       </motion.svg>
 
@@ -72,6 +86,7 @@ function OurProjects() {
       <motion.div
         className="absolute left-2 border border-gray-400 top-16 rounded-xl p-1 backdrop-blur"
         variants={itemVariants}
+        whileHover="hover"
       >
         <div className="flex items-center justify-evenly">
           <img className="h-12" src="https://img.icons8.com/color/400/web.png" alt="Web Development" />
@@ -82,6 +97,7 @@ function OurProjects() {
       <motion.div
         className="absolute right-6 border border-gray-400 top-24 rounded-xl p-1 backdrop-blur"
         variants={itemVariants}
+        whileHover="hover"
       >
         <div className="flex items-center justify-evenly">
           <img className="h-12" src="https://img.icons8.com/3d-fluency/750/design.png" alt="Designs" />
@@ -92,6 +108,7 @@ function OurProjects() {
       <motion.div
         className="absolute right-8 border border-gray-400 bottom-28 rounded-xl p-1 backdrop-blur"
         variants={itemVariants}
+        whileHover="hover"
       >
         <div className="flex items-center justify-evenly">
           <img className="h-12" src="https://img.icons8.com/3d-fluency/750/chart.png" alt="Marketing" />
@@ -102,6 +119,7 @@ function OurProjects() {
       <motion.div
         className="absolute left-12 border border-gray-400 bottom-32 rounded-xl p-1 backdrop-blur"
         variants={itemVariants}
+        whileHover="hover"
       >
         <div className="flex items-center justify-evenly">
           <img className="h-12" src="https://img.icons8.com/color/750/bullish.png" alt="SEO" />
