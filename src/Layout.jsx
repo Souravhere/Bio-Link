@@ -46,7 +46,7 @@ function Layout() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000); 
+    const timer = setTimeout(() => setLoading(false), 2200); 
     return () => clearTimeout(timer);
   }, []);
 
@@ -96,7 +96,7 @@ function Layout() {
                 </svg>
               </motion.div>
             </motion.div>
-            <Counter />
+            {/* <Counter /> */}
           </motion.div>
         )}
       </AnimatePresence>
