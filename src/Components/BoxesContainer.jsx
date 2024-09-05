@@ -61,7 +61,7 @@ export const BoxesContainer = () => {
           variants={fadeInUp}
           transition={{ delay: 0.2 }}
         >
-          At Byyte.co, we craft visually stunning websites, captivating designs, and data-driven marketing strategies to elevate your brand.
+          At Byyte, we craft visually stunning websites, captivating designs, and data-driven marketing strategies to elevate your brand.
         </motion.p>
         <div className="flex flex-wrap justify-center">
           <motion.div variants={buttonSlideUp}>
