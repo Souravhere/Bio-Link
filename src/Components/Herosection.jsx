@@ -58,7 +58,7 @@ export default function Herosection() {
               variants={fadeIn}
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
             >
-              At Byyte.co, we craft visually stunning websites, captivating designs, and data-driven marketing strategies to elevate your brand.
+              At Byyte, we craft visually stunning websites, captivating designs, and data-driven marketing strategies to elevate your brand.
             </motion.p>
             <motion.div 
               className="sm:mt-5 mt-10 sm:flex block items-center justify-center gap-x-6 sm:px-0 px-6"
