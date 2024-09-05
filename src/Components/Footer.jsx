@@ -14,7 +14,7 @@ function Footer() {
               <a href="/" className="flex items-center">
                   <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Byyte</span>
               </a>
-              <p className='sm:w-1/3 w-full text-sm text-gray-500 mt-2'>At Byyte.co, we craft visually stunning websites, captivating designs, and data-driven marketing strategies to elevate your brand.</p>
+              <p className='sm:w-1/3 w-full text-sm text-gray-500 mt-2'>At Byyte Digital, we craft visually stunning websites, captivating designs, and data-driven marketing strategies to elevate your brand.</p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
