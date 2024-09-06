@@ -11,7 +11,7 @@ import OurTeam from './Components/OurTeam';
 import Ourporjects from './Components/Ourporjects';
 function App() {
   return (
-  <div className='w-full max-w-screen-xl'>
+  <div className='w-full max-w-screen-xl mx-auto'>
   <BoxesContainer/>
   <OurTeam/>
   {/* <Pagelink/> */}
