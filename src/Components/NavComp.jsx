@@ -13,7 +13,7 @@ function NavComp() {
       <div className='w-full max-w-screen-xl mx-auto flex items-center justify-between py-4 px-3 bg-white'>
         {/* <StaggeredText text="Byyte.co" hoverColor="gray" baseColor="black" className='font-semibold text-2xl' /> */}
         <a href="/">
-        <h1 className='font-semibold sm:text-[29px] text-[22px]'>Byyte.in</h1>
+        <h1 className='font-semibold sm:text-[26px] text-[22px]'>Byyte Digital</h1>
         </a>
 
         <div className='md:hidden absolute top-2 right-5'>
@@ -24,13 +24,13 @@ function NavComp() {
 
         <div className='hidden md:flex gap-5'>
           <NavLink to='/'>
-            <StaggeredText text="Home" hoverColor="gray" baseColor="black" className='font-semibold text-[23px]' />
+            <StaggeredText text="Home" hoverColor="gray" baseColor="black" className='font-semibold text-[20px]' />
           </NavLink>
           <NavLink to='aboutus'>
-            <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-[23px]' />
+            <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-[20px]' />
           </NavLink>
           <NavLink to='Services'>
-            <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-[23px]' />
+            <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-[20px]' />
           </NavLink>
         </div>
         
