@@ -15,7 +15,7 @@
             align-items: center;
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
+            z-index: 40;
         }
         .whatsapp-icon img {
             width: 35px;
