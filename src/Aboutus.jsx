@@ -4,7 +4,7 @@ import TeamSection from './Components/TeamSection';
 
 function AboutUs() {
   return (
-    <div className="about-us-section py-16 px-4 md:px-8 lg:px-16">
+    <div className="about-us-section w-full max-w-screen-xl mx-auto py-16 px-4 md:px-8 lg:px-16">
       {/* Section Heading */}
       <motion.h2
         className="text-5xl font-bold text-center mb-10"
