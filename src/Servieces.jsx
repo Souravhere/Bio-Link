@@ -43,7 +43,7 @@ const servicesData = [
 
 function Services() {
   return (
-    <div className="services-section py-16 px-4 md:px-8 lg:px-16">
+    <div className="services-section w-full max-w-screen-xl mx-auto py-16 px-4 md:px-8 lg:px-16">
       {/* Section Heading */}
       <motion.h2
         className="text-5xl font-bold text-center mb-12"
