@@ -32,6 +32,9 @@ function NavComp() {
           <NavLink to='Services'>
             <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold text-[20px]' />
           </NavLink>
+          <NavLink to='ourprojects'>
+            <StaggeredText text="Our Projects" hoverColor="gray" baseColor="black" className='font-semibold text-[20px]' />
+          </NavLink>
         </div>
         
           <NavLink to='Contactus' className='sm:block hidden font-semibold bg-indigo-500 py-2 px-2 rounded-lg'>

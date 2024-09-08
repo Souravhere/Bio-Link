@@ -8,6 +8,7 @@ import Layout from './Layout.jsx'
 import Servieces from './Servieces.jsx'
 import Aboutus from './Aboutus.jsx'
 import ContactUs from './ContactUs.jsx'
+import Webuild from './Components/Webuild.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
       { path: '', element: <App /> },
       { path: 'services', element: <Servieces /> },
       { path: 'aboutus', element: <Aboutus /> },
-      { path: 'contactus', element: <ContactUs /> }
+      { path: 'contactus', element: <ContactUs /> },
+      { path:'ourprojects', element: <Webuild /> }
     ]
   }
 ]);
