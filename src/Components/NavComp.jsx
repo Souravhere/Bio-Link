@@ -57,15 +57,15 @@ function NavComp() {
                 <p className='font-semibold text-3xl my-2 text-black'>Home</p>
               </NavLink>
               <NavLink onClick={toggleMenu} to='aboutus'>
-                {/* <StaggeredText text="About Us" hoverColor="gray" baseColor="black" className='font-semibold text-3xl my-2' /> */}
                 <p className='font-semibold text-3xl my-2 text-black'>About Us</p>
               </NavLink>
               <NavLink onClick={toggleMenu} to='services'>
-                {/* <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold  text-3xl my-2' /> */}
                 <p className='font-semibold text-3xl my-2 text-black'>Services</p>
               </NavLink>
+              <NavLink onClick={toggleMenu} to='ourprojects'>
+                <p className='font-semibold text-3xl my-2 text-black'>Our Projects</p>
+              </NavLink>
               <NavLink onClick={toggleMenu} to='Contactus'>
-                {/* <StaggeredText text="Services" hoverColor="gray" baseColor="black" className='font-semibold  text-3xl my-2' /> */}
                 <p className='font-semibold text-3xl my-2 text-black'>Contact Us</p>
               </NavLink>
             </motion.div>
