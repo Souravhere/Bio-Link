@@ -49,14 +49,14 @@ const Webuild = () => {
               variants={cardVariants}
               className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:shadow-2xl"
             >
-              <div className="h-48 bg-indigo-200 relative">
+              <div className="h-56 sm:h-48 bg-indigo-200 relative">
                 <motion.div
                   className="absolute inset-0"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
                 >
-                    <img src={project.img} alt=""  loading="lazy"/>
+                    <img className="-mt-4" src={project.img} alt=""  loading="lazy"/>
                 </motion.div>
               </div>
               <div className="p-6">
