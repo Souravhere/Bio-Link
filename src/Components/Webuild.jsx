@@ -40,8 +40,11 @@ const cardVariants = {
 
 const Webuild = () => {
   return (
-    <div className="py-10">
-      <div className="container mx-auto px-4 py-4">
+    <div className="py-10 mx-auto w-full max-w-screen-xl">
+        <h1 className="text-2xl text-center font-semibold">Transforming Ideas into Digital Masterpieces</h1>
+        <p className="px-5 w-full sm:w-1/2 text-sm text-center mx-auto my-2 font-semibold text-gray-500">Explore our innovative projects where creativity meets cutting-edge technology. From enterprise solutions to stunning digital designs, we deliver exceptional results that drive growth and innovation.</p>
+        {/* <h1 className="text-2xl font-semibold text-center my-3 relative overflow-visible">Our <span className="bg-indigo-500 text-white absolute px-1 -rotate-3 mx-2">Websites</span></h1> */}
+      <div className="container mx-auto px-4 py-4"> 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project, index) => (
             <motion.div
