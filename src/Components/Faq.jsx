@@ -152,14 +152,14 @@ function Faq() {
   ];
 
   return (
-    <div className="w-full sm:flex rounded-lg dark:bg-gray-800 dark:border-gray-700 px-2">
-        <div className='sm:w-[30%] w-full sm:text-left sm:px-2 my-4'>
-            <h1 className='font-semibold sm:text-4xl py-2 sticky top-0 text-3xl sm:text-left text-center'>Frequently asked questions</h1>
-            <p className='font-semibold text-gray-400 mt-2 sm:text-left text-center sm:px-0 px-3'>I’m joking. Nobody asked any questions yet. I came up with them myself.</p>
+    <div className="w-full rounded-lg dark:bg-gray-800 dark:border-gray-700 px-2">
+        <div className='w-full sm:text-left sm:px-2 my-4 text-center'>
+            <h1 className='font-bold sm:text-4xl py-2 sticky top-0 text-2xl text-center text-indigo-800'>Frequently asked questions</h1>
+            <p className='font-semibold text-gray-400 mt-2 text-center sm:px-0 px-3'>I’m joking. Nobody asked any questions yet. I came up with them myself.</p>
             {/* <img className='sm:block hidden' src="./our-project-3.png" alt="" /> */}
         </div>
-        <div className='sm:w-[70%] w-full'>
-        <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" role="tablist">
+        <div className='w-full mx-auto'>
+        <ul className="flex items-center justify-evenly text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" role="tablist">
         {tabs.map((tab) => (
           <li key={tab.id} className="me-2">
             <button
@@ -168,7 +168,7 @@ function Faq() {
                 activeTab === tab.id
                   ? 'text-white dark:text-blue-500 bg-indigo-500 dark:bg-gray-800'
                   : 'hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300'
-              } rounded-ss-lg`}
+              } rounded-lg`}
             >
               {tab.label}
             </button>
