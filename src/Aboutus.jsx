@@ -94,7 +94,7 @@ function AboutUs() {
       </motion.div>
 
       {/* Team Section */}
-        <TeamSection />
+        {/* <TeamSection /> */}
 
       {/* Our Values Section */}
       <motion.div
