@@ -18,16 +18,18 @@ const projects = [
     url: "https://www.studiobirzaveluwe.nl/",
   },
   {
-    name: "Skuad",
-    description: "$19.8M raised in funding",
-    tags: ["B2B SaaS", "SEO"],
-    url: "#",
+    name: " DR. MARC",
+    description: "We care about your smile.",
+    tags: ["React.js","Framer Motion", "SEO"],
+    img:'https://assets.awwwards.com/awards/element/2024/05/664201dcacb07799103566.png',
+    url: "https://drmarc.webflow.io/",
   },
   {
-    name: "Hyperverge",
-    description: "65% growth in enterprise leads",
-    tags: ["B2B SaaS", "Visual Design", "Webflow Development"],
-    url: "#",
+    name: "Rattan Company",
+    description: "Handmade Natural Rattan Indoor Furniture",
+    tags: ["Shopify", "Visual Design", "SEO"],
+    img:'https://assets.awwwards.com/awards/submissions/2022/09/631ef4bbec1c5056212675.jpg',
+    url: "https://therattancompany.co.uk/",
   },
 ];
 
@@ -56,7 +58,7 @@ const Webuild = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
                 >
-                    <img className="-mt-4" src={project.img} alt=""  loading="lazy"/>
+                    <img className="-mt-4 overflow-y-hidden" src={project.img} alt=""  loading="lazy"/>
                 </motion.div>
               </div>
               <div className="p-6">
