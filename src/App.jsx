@@ -9,6 +9,7 @@ import Textscroll from './Components/Animation/Textscroll';
 import { BoxesContainer } from './Components/BoxesContainer';
 import OurTeam from './Components/OurTeam';
 import Ourporjects from './Components/Ourporjects';
+import WhyDifferent from './Components/WhyDifferent';
 function App() {
   return (
   <div className='w-full max-w-screen-xl mx-auto'>
@@ -27,6 +28,7 @@ function App() {
         </div>
       </div>
     </div>
+    <WhyDifferent/>
     <Faq/>
     {/* <TeamSection/> */}
     <TestimonialsSection/>
