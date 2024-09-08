@@ -47,9 +47,9 @@ const Webuild = () => {
               initial="hidden"
               animate="visible"
               variants={cardVariants}
-              className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:shadow-2xl"
+              className="bg-white rounded-lg overflow-hidden border  duration-700 hover:bg-indigo-100"
             >
-              <div className="h-56 sm:h-48 bg-indigo-200 relative">
+              <div className="h-56 sm:h-48 bg-indigo-200 relative overflow-y-hidden after:content-['Loding..']">
                 <motion.div
                   className="absolute inset-0"
                   initial={{ opacity: 0 }}
