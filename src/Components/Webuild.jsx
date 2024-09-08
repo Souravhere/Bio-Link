@@ -39,7 +39,7 @@ const cardVariants = {
 const Webuild = () => {
   return (
     <div className="py-10">
-      <div className="container mx-auto px-4 py-4 bg-slate-400">
+      <div className="container mx-auto px-4 py-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project, index) => (
             <motion.div
@@ -49,7 +49,7 @@ const Webuild = () => {
               variants={cardVariants}
               className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:shadow-2xl"
             >
-              <div className="h-48 bg-purple-800 relative">
+              <div className="h-48 bg-indigo-200 relative">
                 <motion.div
                   className="absolute inset-0"
                   initial={{ opacity: 0 }}
