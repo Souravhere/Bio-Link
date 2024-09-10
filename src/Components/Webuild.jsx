@@ -61,7 +61,7 @@ const graphicProjects = [
   {
     name: "School Website UI",
     description: "UI design for a school website.",
-    img: "https://i.pinimg.com/564x/bd/76/a8/bd76a8e56e7c44f63c135c93bbde0c5d.jpg",
+    img: "https://i.pinimg.com/564x/06/63/99/066399ec6b9d35460ef1e329d36b5e38.jpg",
   },
   {
     name: "Business Website UI",
