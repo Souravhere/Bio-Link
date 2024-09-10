@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const websiteProjects = [
   {
-    name: " Tilton School",
+    name: "Tilton School",
     description: "Creating your Future. Together.",
     tags: ["Figma", "React.js", "Framer Motion"],
     img: 'https://assets.awwwards.com/awards/element/2024/02/65c6a7b940b4e303831840.png',
@@ -17,7 +17,7 @@ const websiteProjects = [
     url: "https://www.studiobirzaveluwe.nl/",
   },
   {
-    name: " DR. MARC",
+    name: "DR. MARC",
     description: "We care about your smile.",
     tags: ["React.js", "Framer Motion", "SEO"],
     img: 'https://assets.awwwards.com/awards/element/2024/05/664201dcacb07799103566.png',
@@ -33,12 +33,47 @@ const websiteProjects = [
 ];
 
 const graphicProjects = [
-  // Add your graphic design projects here
+  {
+    name: "Cosmetic Product Ad",
+    description: "Design advertising for cosmetic product.",
+    img: "https://i.pinimg.com/564x/aa/30/14/aa3014e7ba20ad38bfed5b43d84f97d5.jpg",
+  },
+  {
+    name: "Product Coming Soon",
+    description: "product coming soon",
+    img: "https://i.pinimg.com/564x/ac/30/49/ac30499143047da2dd8cc5f8793402d6.jpg",
+  },
+  {
+    name: "Product Launch Poster",
+    description: "Product launching poster",
+    img: "https://i.pinimg.com/736x/b1/1e/10/b11e10a9f9d81a105ce836a31de882cb.jpg",
+  },
+  {
+    name: "Social Media Post",
+    description: "Social media post design.",
+    img: "https://cdn.dribbble.com/userupload/13811775/file/original-6dd5f3be34ea17fcd2bc0cde4a25997c.png?resize=1504x1128",
+  },
+  {
+    name: "Cafe Website UI",
+    description: "UI design for a cafe website.",
+    img: "https://i.pinimg.com/564x/7b/99/f2/7b99f22c99122c58ed199ed4daf1c766.jpg",
+  },
+  {
+    name: "School Website UI",
+    description: "UI design for a school website.",
+    img: "https://i.pinimg.com/564x/bd/76/a8/bd76a8e56e7c44f63c135c93bbde0c5d.jpg",
+  },
+  {
+    name: "Business Website UI",
+    description: "UI design for a business website.",
+    img: "https://i.pinimg.com/564x/a3/d5/6b/a3d56bcbc1428b1f502bc43260ca0c62.jpg",
+  },
+  {
+    name: "Coffee Shop Landing Page",
+    description: "Landing page design for a coffee shop.",
+    img: "https://i.pinimg.com/564x/eb/b4/9b/ebb49b69876e748f64ac5b3819634416.jpg",
+  },
 ];
-
-// const socialMediaResults = [
-//   // Add your social media results here
-// ];
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -54,8 +89,6 @@ const Webuild = () => {
       projects = websiteProjects;
     } else if (activeTab === "graphics") {
       projects = graphicProjects;
-    } else {
-      projects = socialMediaResults;
     }
 
     return projects.map((project, index) => (
@@ -66,37 +99,21 @@ const Webuild = () => {
         variants={cardVariants}
         className="bg-white rounded-lg overflow-hidden border duration-700 hover:bg-indigo-100"
       >
-        <div className="h-fit sm:h-48 bg-indigo-200 relative overflow-y-hidden">
+        <div className="h-auto relative overflow-hidden">
           <motion.div
             className=""
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <img className="-mt-4 overflow-y-hidden" src={project.img} alt="" loading="lazy" />
+            <img className="object-cover w-full h-full" src={project.img} alt={project.name} loading="lazy" />
           </motion.div>
         </div>
-        <div className="p-6">
-          <h3 className="text-xl font-semibold hover:text-indigo-600 duration-500">
+        <div className="p-4">
+          <h3 className="text-lg font-semibold hover:text-indigo-600 duration-500">
             {project.name}
           </h3>
           <p className="mt-2 text-gray-600">{project.description}</p>
-          <div className="mt-4">
-            {project.tags.map((tag, idx) => (
-              <span
-                key={idx}
-                className="inline-block bg-indigo-500 text-white text-xs px-2 py-1 rounded-full mr-2"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-          <a
-            href={project.url} target="blank"
-            className="block mt-4 text-indigo-600 hover:text-indigo-500 duration-500"
-          >
-            Live Demo &rarr;
-          </a>
         </div>
       </motion.div>
     ));
@@ -119,16 +136,10 @@ const Webuild = () => {
         </button>
         <button
           onClick={() => setActiveTab("graphics")}
-          className={`px-4 py-2 mx-2 ${activeTab === "graphics" ? "bg-indigo-500 text-white" : "bg-gray-200"} rounded`}
+          className={`px-4 h-fit py-2 mx-2 ${activeTab === "graphics" ? "bg-indigo-500 text-white" : "bg-gray-200"} rounded`}
         >
           Our Graphics
         </button>
-        {/* <button
-          onClick={() => setActiveTab("social")}
-          className={`px-4 py-2 mx-2 ${activeTab === "social" ? "bg-indigo-500 text-white" : "bg-gray-200"} rounded`}
-        >
-          Social Media Results
-        </button> */}
       </div>
 
       {/* Projects Section */}
