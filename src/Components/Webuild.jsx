@@ -36,9 +36,9 @@ const graphicProjects = [
   // Add your graphic design projects here
 ];
 
-const socialMediaResults = [
-  // Add your social media results here
-];
+// const socialMediaResults = [
+//   // Add your social media results here
+// ];
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -123,12 +123,12 @@ const Webuild = () => {
         >
           Our Graphics
         </button>
-        <button
+        {/* <button
           onClick={() => setActiveTab("social")}
           className={`px-4 py-2 mx-2 ${activeTab === "social" ? "bg-indigo-500 text-white" : "bg-gray-200"} rounded`}
         >
           Social Media Results
-        </button>
+        </button> */}
       </div>
 
       {/* Projects Section */}
