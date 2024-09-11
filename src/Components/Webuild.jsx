@@ -110,14 +110,14 @@ const Webuild = () => {
           <p className="mt-2 text-gray-600">{project.description}</p>
           <div className="flex flex-wrap mt-2">
             {project.tags.map((tag, idx) => (
-              <span key={idx} className="bg-indigo-500 text-white text-xs px-2 py-1 rounded mr-2 mb-2">
+              <span key={idx} className="bg-indigo-500 text-white text-xs px-2 py-1 rounded-full mr-2 mb-2">
                 {tag}
               </span>
             ))}
           </div>
           <a href={project.url} target="_blank" rel="noopener noreferrer">
-            <button className="mt-3 text-sm text-white bg-indigo-500 px-3 py-2 rounded">
-              Live Demo
+            <button className="mt-3 text-md text-indigo-500 hover:text-indigo-600">
+              Live Demo →
             </button>
           </a>
         </div>
