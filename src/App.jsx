@@ -6,7 +6,7 @@ import Faq from './Components/Faq';
 import TeamSection from './Components/TeamSection';
 import TestimonialsSection from './TestimonialsSection';
 import Textscroll from './Components/Animation/Textscroll';
-import { BoxesContainer } from './Components/BoxesContainer';
+import  BoxesContainer  from './Components/BoxesContainer';
 import OurTeam from './Components/OurTeam';
 import Ourporjects from './Components/Ourporjects';
 import WhyDifferent from './Components/WhyDifferent';
