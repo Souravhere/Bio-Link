@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Masonry from "react-masonry-css";
 
 const websiteProjects = [
   {
@@ -83,15 +84,8 @@ const cardVariants = {
 const Webuild = () => {
   const [activeTab, setActiveTab] = useState("websites");
 
-  const renderProjects = () => {
-    let projects = [];
-    if (activeTab === "websites") {
-      projects = websiteProjects;
-    } else if (activeTab === "graphics") {
-      projects = graphicProjects;
-    }
-
-    return projects.map((project, index) => (
+  const renderWebsiteProjects = () => {
+    return websiteProjects.map((project, index) => (
       <motion.div
         key={index}
         initial="hidden"
@@ -114,8 +108,30 @@ const Webuild = () => {
             {project.name}
           </h3>
           <p className="mt-2 text-gray-600">{project.description}</p>
+          <div className="flex flex-wrap mt-2">
+            {project.tags.map((tag, idx) => (
+              <span key={idx} className="bg-indigo-500 text-white text-xs px-2 py-1 rounded mr-2 mb-2">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            <button className="mt-3 text-sm text-white bg-indigo-500 px-3 py-2 rounded">
+              Live Demo
+            </button>
+          </a>
         </div>
       </motion.div>
+    ));
+  };
+
+  const renderGraphicProjects = () => {
+    return graphicProjects.map((project, index) => (
+      <div key={index} className="my-6 rounded-md border p-2 hover:bg-indigo-200 duration-500 ">
+        <img className="object-cover w-full rounded-lg" src={project.img} alt={project.name} loading="lazy" />
+        <h3 className="text-lg font-semibold mt-2">{project.name}</h3>
+        <p className="text-gray-600">{project.description}</p>
+      </div>
     ));
   };
 
@@ -144,9 +160,19 @@ const Webuild = () => {
 
       {/* Projects Section */}
       <div className="container mx-auto px-4 py-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {renderProjects()}
-        </div>
+        {activeTab === "websites" ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {renderWebsiteProjects()}
+          </div>
+        ) : (
+          <Masonry
+            breakpointCols={{ default: 4, 1100: 3, 700: 2, 500: 1 }}
+            className="flex -ml-4 w-auto"
+            columnClassName="pl-4 bg-clip-padding"
+          >
+            {renderGraphicProjects()}
+          </Masonry>
+        )}
       </div>
     </div>
   );
