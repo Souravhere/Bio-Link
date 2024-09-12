@@ -10,9 +10,11 @@ import { BoxesContainer } from './Components/BoxesContainer';
 import OurTeam from './Components/OurTeam';
 import Ourporjects from './Components/Ourporjects';
 import WhyDifferent from './Components/WhyDifferent';
+import NewHeroSection from './Components/NewHeroSection';
 function App() {
   return (
   <div className='w-full max-w-screen-xl mx-auto'>
+    <NewHeroSection/>
   <BoxesContainer/>
   <OurTeam/>
   {/* <Pagelink/> */}
