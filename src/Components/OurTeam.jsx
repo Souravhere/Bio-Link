@@ -43,7 +43,7 @@ const OurTeam = () => {
             viewport={{ once: true }}
             variants={cardVariants}
             whileHover="hover"
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            transition={{ duration: 0.5}}
           >
             <div className="absolute top-0 right-0 mt-4 mr-4 text-indigo-400 opacity-10 text-7xl">
               {card.icon}
