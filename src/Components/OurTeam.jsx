@@ -11,7 +11,7 @@ const cardVariants = {
 const OurTeam = () => {
   return (
     <div className="flex flex-col items-center justify-center py-10 bg-white">
-      <h2 className="text-2xl font-bold mb-6">Our Expert Team at Byyte</h2>
+      <h2 className="sm:text-4xl text-2xl font-bold text-indigo-800 mb-10 py-1">Our Expert Team at Byyte</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl w-full py-5">
         {[
           {

@@ -24,7 +24,7 @@ function App() {
       <Ourporjects/>
       </div>
       <div className='sm:w-1/2 w-full relative sm:mt-0 -mt-20'>
-        <h1 className='text-black dark:text-white text-3xl font-semibold text-center py-2'>Project Completed</h1>
+        <h1 className='text-indigo-800 font-bold dark:text-white sm:text-4xl text-2xl text-center py-2'>Project Completed</h1>
         <div className='sm:h-[400px] h-fit overflow-y-scroll w-full'>
           <Pojectcard />
         </div>
