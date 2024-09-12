@@ -44,7 +44,7 @@ function NavComp() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className='fixed z-50 top-0 right-0 w-3/4 h-full bg-[#e5e5e1] dark:bg-black text-white flex flex-col items-center pt-20'
+              className='fixed z-50 top-0 right-0 w-3/4 h-full bg-white/50 backdrop-blur-lg dark:bg-black text-white flex flex-col items-center pt-20'
               initial={{ opacity: 0, x: '100%' }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: '100%' }}
