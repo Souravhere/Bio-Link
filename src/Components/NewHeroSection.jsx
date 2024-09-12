@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { NavLink } from 'react-router-dom'
 
 export default function NewHeroSection() {
   return (
@@ -12,12 +13,21 @@ export default function NewHeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-indigo-600 leading-tight mb-4">
-              Turning innovative ideas into amazing solutions
-            </h1>
-            <p className="text-xl text-gray-600 mb-6">
-              Unlocking the Power of Innovation: Transforming Ideas into Extraordinary Solutions
-            </p>
+            <motion.h1
+          className="text-4xl font-bold leading-none mt-2 sm:text-5xl py-2 sm:px-8 px-2"
+        >
+          Your Vision with
+          <span className="text-indigo-600 ml-2">Byyte</span>
+        </motion.h1>
+        <motion.p
+          className="px-8 mt-8 mb-12 text-lg"
+          transition={{ delay: 0.2 }}
+        >
+          At Byyte Digital, we craft visually stunning websites, captivating designs, and data-driven marketing strategies to elevate your brand.
+        </motion.p>
+        <NavLink to={'contactus'}
+        className="px-8"
+        >
             <motion.button 
               className="bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300"
               whileHover={{ scale: 1.05 }}
@@ -25,6 +35,7 @@ export default function NewHeroSection() {
             >
               Our Solution
             </motion.button>
+            </NavLink>
           </motion.div>
           <motion.div 
             className="lg:w-1/2 mt-12 lg:mt-0"

@@ -42,7 +42,7 @@ const Counter = () => {
 };
 
 function Layout() {
-  useSmoothScroll();
+  // useSmoothScroll();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
