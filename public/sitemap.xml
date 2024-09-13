@@ -38,6 +38,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!--Terms & Conditions added -->
+  <url>
+    <loc>https://www.byyte.in/Terms.pdf</loc>
+    <lastmod>2024-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.byyte.in/Privacy-Policy.pdf</loc>
+    <lastmod>2024-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
   <!-- Add more pages as needed -->
 </urlset>
