@@ -31,6 +31,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- https://www.byyte.in/Byyte-Digital-Brochure.pdf link added -->
+  <url>
+    <loc>https://www.byyte.in/Byyte-Digital-Brochure.pdf</loc>
+    <lastmod>2024-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
   <!-- Add more pages as needed -->
 </urlset>
