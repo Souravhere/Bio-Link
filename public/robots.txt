@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /Byyte-Digital-Brochure.pdf
+Disallow: /Terms.pdf
+Disallow: /Privacy-Policy.pdf
+
+# Allow specific pages to be crawled
+Allow: /
+
+Sitemap: https://www.byyte.in/sitemap.xml
