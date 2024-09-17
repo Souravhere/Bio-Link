@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaLaptopCode, FaPaintBrush, FaUsers, FaBullhorn, FaFileAlt, FaChartLine } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 function AboutUs() {
   const services = [
@@ -43,6 +44,12 @@ function AboutUs() {
 
   return (
     <div className="about-us-section w-full max-w-screen-xl mx-auto py-16 px-4 md:px-8 lg:px-16">
+      <Helmet>
+      <title>Byyte Digital | About Us</title>
+      <meta name="description" content="Learn more about Byyte Digital and our mission." />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://www.byyte.in/aboutus" />
+    </Helmet>
       {/* Section Heading */}
       <motion.h2
         className="text-5xl font-bold text-center mb-10"
